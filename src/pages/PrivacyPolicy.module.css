@@ -1,0 +1,170 @@
+.privacyPolicyContainer {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1e293b;
+  background: #ffffff;
+  padding: 2.5rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInDown 0.8s forwards;
+}
+
+.header h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro,
+.conclusion {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  margin-bottom: 2.5rem;
+}
+
+.intro.visible,
+.conclusion.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.intro h2,
+.conclusion h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.intro p,
+.conclusion p {
+  font-size: 1.05rem;
+  color: #475569;
+  margin: 0;
+}
+
+.link {
+  color: #4f46e5;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: #4338ca;
+}
+
+/* Cards Section */
+.cardsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+  margin: 2.5rem 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  border-color: #cbd5e1;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.875rem;
+  color: #0f172a;
+}
+
+.card p {
+  color: #475569;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacyPolicyContainer {
+    padding: 2rem 1.25rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .intro h2,
+  .conclusion h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacyPolicyContainer {
+    padding: 1.5rem 1rem;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .header h1 {
+    font-size: 1.75rem;
+  }
+
+  .intro,
+  .conclusion {
+    margin-bottom: 2rem;
+  }
+
+  .intro h2,
+  .conclusion h2 {
+    font-size: 1.375rem;
+  }
+
+  .cardsSection {
+    gap: 1.25rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .card h3 {
+    font-size: 1.125rem;
+  }
+}
