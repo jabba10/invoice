@@ -59,7 +59,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className={styles.footerBottom}>
-        <p>© {new Date().getFullYear()} Free Invoice Generator. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} NoFeesInvoice. All rights reserved.</p>
       </div>
     </footer>
   );
