@@ -5,7 +5,6 @@
   --accent: #10b981;
   --background: #ffffff;
   --text: #374151;
-  
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   color: var(--text);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -15,13 +14,6 @@
   max-width: 100vw;
   overflow-x: hidden;
   padding: clamp(0.5rem, 2vw, 1rem);
-  box-sizing: border-box;
-}
-
-/* Ensure 100% visibility on all screens - Fixed pure selector */
-.invoiceGeneratorContainer {
-  max-width: 100vw;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -112,33 +104,42 @@
   gap: clamp(0.5rem, 1.5vw, 0.625rem);
   flex-wrap: wrap;
   justify-content: flex-end;
+  width: 100%; /* Ensure it takes full width on small screens */
+  justify-content: center; /* Center the button on small screens */
 }
 
-/* Enhanced Responsive Buttons - More Compact */
+/* Enhanced Responsive Buttons - More Compact & Sexy */
 .downloadBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.375rem;
-  padding: clamp(0.625rem, 2.5vw, 0.75rem) clamp(1rem, 3vw, 1.125rem);
+  /* Padding adjusted for better touch targets on mobile and a sleeker look */
+  padding: clamp(0.6875rem, 2.8vw, 0.8125rem) clamp(1.125rem, 3.5vw, 1.375rem);
   background: var(--primary);
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 9px; /* Slightly less rounded for a more modern look */
   font-weight: 600;
-  font-size: clamp(0.75rem, 1.6vw, 0.85rem);
+  font-size: clamp(0.75rem, 1.8vw, 0.85rem); /* Slightly smaller font for compactness */
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Softer shadow for a sleeker look */
   text-decoration: none;
   white-space: nowrap;
-  min-height: clamp(40px, 8vw, 44px);
+  /* Ensure minimum height for touch targets */
+  min-height: clamp(42px, 8.5vw, 46px);
   flex-shrink: 0;
-  max-width: 100%;
-  width: auto;
+  max-width: 100%; /* Prevents overflow */
+  width: 100%; /* Make button full width on small screens */
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  /* Ensure button stands out and looks cool */
+  border: 1.5px solid transparent;
+  z-index: 10;
+  /* Subtle inset shadow for depth */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .downloadBtn::before {
@@ -148,14 +149,16 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.5s;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 0.4s;
 }
 
 .downloadBtn:hover {
   background: var(--secondary);
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  transform: translateY(-1.5px) scale(1.015); /* Slightly less intense transform */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 4px 10px rgba(37, 99, 235, 0.2); /* Softer shadow on hover */
+  /* Add a subtle border on hover for better visibility */
+  border-color: var(--secondary);
 }
 
 .downloadBtn:hover::before {
@@ -163,13 +166,15 @@
 }
 
 .downloadBtn:active {
-  transform: translateY(-1px) scale(1);
-  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+  transform: translateY(-0.5px) scale(1); /* Less movement on click */
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(37, 99, 235, 0.15); /* Pressed shadow */
 }
 
 .downloadBtn:focus-visible {
   outline: 2px solid var(--secondary);
-  outline-offset: 1px;
+  outline-offset: 1.5px; /* Slightly more offset for visibility */
+  /* Ensure focus outline is visible even with border */
+  border-color: var(--secondary);
 }
 
 /* Secondary Buttons - More Compact */
@@ -1097,14 +1102,12 @@
   .generatorContainer {
     gap: 1rem;
   }
-  
   .formSection,
   .previewSection {
     min-height: 450px;
     position: relative;
     top: 0;
   }
-  
   .formSection {
     max-height: none;
   }
@@ -1115,37 +1118,30 @@
     padding: 0.75rem;
     font-size: 7px;
   }
-  
   .invoiceHeader {
     flex-direction: column;
     gap: 0.75rem;
     text-align: center;
   }
-  
   .headerLeft {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
   .invoiceTitleSection {
     text-align: center;
     width: 100%;
   }
-  
   .invoiceParties {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
-
   .watermark {
     font-size: 2rem;
   }
-
   .seoTitle {
     font-size: 1.5rem;
   }
-
   .seoDescription {
     font-size: 0.85rem;
   }
@@ -1155,7 +1151,6 @@
   .invoiceGenerator {
     padding: 0.25rem;
   }
-  
   .generatorHeader {
     flex-direction: column;
     align-items: stretch;
@@ -1163,20 +1158,21 @@
     margin-bottom: 1rem;
     gap: 0.75rem;
   }
-  
   .headerActions {
     justify-content: center;
     width: 100%;
   }
-  
   .downloadBtn {
-    flex: 1;
-    min-width: min(240px, 100%);
-    justify-content: center;
-    font-size: clamp(0.8rem, 2vw, 0.85rem);
-    padding: clamp(0.75rem, 3vw, 0.875rem) clamp(1.25rem, 4vw, 1.5rem);
+    /* Ensure full width and consistent padding on medium screens */
+    width: 100%;
+    padding: 0.75rem 1.25rem; /* Adjusted padding for smaller gap */
+    font-size: 0.8rem; /* Slightly smaller font */
+    min-height: 44px; /* Slightly smaller height */
+    margin-bottom: 0.5rem; /* Add small gap below the button */
   }
-  
+  .generatorContainer {
+    margin-top: 0.5rem; /* Add small gap above the container */
+  }
   .formSection,
   .previewSection {
     padding: 1rem;
@@ -1184,24 +1180,21 @@
     min-height: 400px;
     overflow: hidden;
   }
-
   .invoiceFooter {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
-  
   .dateInputs {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
-  
+  /* Responsive table for smaller screens */
   .itemsHeader,
   .itemRow {
     grid-template-columns: 1fr;
     gap: 0.5rem;
     padding: 0.5rem;
   }
-  
   .headerDescription,
   .headerQty,
   .headerRate,
@@ -1209,7 +1202,6 @@
   .headerActions {
     display: none;
   }
-  
   .itemDescription,
   .itemQuantity,
   .itemRate,
@@ -1217,7 +1209,6 @@
   .itemActions {
     width: 100%;
   }
-  
   .itemRow {
     position: relative;
     padding-top: 1rem;
@@ -1225,7 +1216,6 @@
     border-radius: 4px;
     margin-bottom: 0.375rem;
   }
-  
   .itemDescription::before {
     content: "Description";
     font-weight: 600;
@@ -1234,7 +1224,6 @@
     display: block;
     margin-bottom: 0.375rem;
   }
-  
   .itemQuantity::before {
     content: "Quantity";
     font-weight: 600;
@@ -1243,7 +1232,6 @@
     display: block;
     margin-bottom: 0.375rem;
   }
-  
   .itemRate::before {
     content: "Rate";
     font-weight: 600;
@@ -1252,7 +1240,6 @@
     display: block;
     margin-bottom: 0.375rem;
   }
-  
   .itemAmount::before {
     content: "Amount";
     font-weight: 600;
@@ -1261,14 +1248,12 @@
     display: block;
     margin-bottom: 0.375rem;
   }
-  
   .itemActions {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
     width: auto;
   }
-  
   /* Professional table responsive */
   .tableHeader,
   .tableRow {
@@ -1276,7 +1261,6 @@
     gap: 0.25rem;
     padding: 0.5rem;
   }
-  
   .colDescription,
   .colQuantity,
   .colRate,
@@ -1284,50 +1268,40 @@
     text-align: left;
     font-size: 0.5rem;
   }
-  
   .colDescription::before {
     content: "Description: ";
     font-weight: 600;
   }
-  
   .colQuantity::before {
     content: "Quantity: ";
     font-weight: 600;
   }
-  
   .colRate::before {
     content: "Unit Price: ";
     font-weight: 600;
   }
-  
   .colAmount::before {
     content: "Amount: ";
     font-weight: 600;
   }
-  
   .metaRow {
     justify-content: center;
     gap: 0.375rem;
   }
-
   .watermark {
     font-size: 1.5rem;
   }
-
   .seoBenefits {
     grid-template-columns: 1fr;
   }
-
   .seoFeatures {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
   }
-  
   .formTabs {
     flex-direction: column;
   }
-  
   .tabButton {
     min-height: 40px;
     font-size: clamp(0.75rem, 1.8vw, 0.8rem);
@@ -1339,54 +1313,45 @@
     padding: 0.5rem;
     font-size: 6px;
   }
-  
   .generatorHeader h2 {
     font-size: 1.25rem;
   }
-  
   .downloadBtn {
-    padding: 0.875rem 1.25rem;
-    font-size: 0.8rem;
-    min-height: 44px;
+    /* Ensure full width and consistent padding on small screens */
     width: 100%;
+    padding: 0.8125rem 1.25rem; /* Fine-tuned padding */
+    font-size: 0.8rem; /* Slightly larger font */
+    min-height: 46px; /* Fine-tuned minimum height */
+    margin-bottom: 0.625rem; /* Small gap below button */
   }
-  
+  .generatorContainer {
+    margin-top: 0.625rem; /* Small gap above container */
+  }
   .formSection,
   .previewSection {
     padding: 0.75rem;
     border-radius: 6px;
   }
-
   .watermark {
     font-size: 1.25rem;
   }
-
   .seoTitle {
     font-size: 1.25rem;
   }
-
   .seoFooter h3 {
     font-size: 1.25rem;
   }
-  
   .headerActions {
     flex-direction: column;
     width: 100%;
   }
-  
-  .downloadBtn {
-    width: 100%;
-  }
-  
   .seoTags {
     flex-direction: column;
     align-items: center;
   }
-  
   .seoTags span {
     width: fit-content;
   }
-
   .addItemBtn {
     width: 100%;
     justify-content: center;
@@ -1397,27 +1362,27 @@
   .generatorContainer {
     padding: 0 0.125rem;
   }
-  
   .formSection,
   .previewSection {
     padding: 0.5rem;
     border-radius: 4px;
   }
-  
   .seoHeader {
     padding: 1rem 0.375rem;
   }
-  
   .seoFeatures span {
     padding: 0.25rem 0.5rem;
     font-size: 0.6rem;
   }
-
   .downloadBtn {
-    font-size: 0.75rem;
-    padding: 0.75rem 1rem;
+    font-size: 0.75rem; /* Maintain readable font size */
+    padding: 0.75rem 1rem; /* Adjust padding if needed */
+    min-height: 44px; /* Ensure minimum touch target */
+    margin-bottom: 0.5rem; /* Consistent small gap */
   }
-
+  .generatorContainer {
+    margin-top: 0.5rem; /* Consistent small gap */
+  }
   .invoicePreview {
     font-size: 5px;
     padding: 0.375rem;
@@ -1464,7 +1429,6 @@
     background: white;
     padding: 0;
   }
-  
   .generatorHeader,
   .formSection,
   .colorPickerModal,
@@ -1472,12 +1436,10 @@
   .seoFooter {
     display: none !important;
   }
-  
   .generatorContainer {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  
   .previewSection {
     box-shadow: none;
     padding: 0;
@@ -1486,7 +1448,6 @@
     border: none;
     display: block !important;
   }
-  
   .invoicePreview {
     box-shadow: none;
     padding: 0.375rem !important;
@@ -1501,13 +1462,11 @@
     page-break-inside: avoid;
     break-inside: avoid;
   }
-
   .invoiceHeader {
     border-bottom: 1px solid #000 !important;
     margin-bottom: 0.375rem !important;
     padding-bottom: 0.375rem !important;
   }
-
   .tableHeader {
     background: #000 !important;
     color: white !important;
@@ -1515,27 +1474,23 @@
     print-color-adjust: exact;
     padding: 0.25rem 0.5rem !important;
   }
-
   .totalsContainer {
     background: #f8f8f8 !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
     padding: 0.5rem !important;
   }
-
   .watermark {
     color: rgba(0, 0, 0, 0.015) !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
     font-size: 2rem !important;
   }
-
   /* Ensure single page */
   .invoicePreview {
     height: auto !important;
     min-height: auto !important;
   }
-  
   /* Prevent page breaks inside critical sections */
   .invoiceHeader,
   .invoiceParties,
@@ -1582,11 +1537,9 @@
   .tabButton:hover {
     transform: none;
   }
-  
   .tabButton {
     min-height: 44px;
   }
-  
   .input,
   .select,
   .textarea {

@@ -1,12 +1,12 @@
 {
+  "/_app": "pages/_app.js",
   "/contact-us": "pages/contact-us.html",
   "/free-invoice-generator": "pages/free-invoice-generator.html",
-  "/_app": "pages/_app.js",
   "/": "pages/index.html",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/not-found-page": "pages/not-found-page.html",
   "/testimonials": "pages/testimonials.html",
+  "/_error": "pages/_error.js",
   "/privacy-policy": "pages/privacy-policy.html",
   "/aboutus": "pages/aboutus.html",
   "/404": "pages/404.html"

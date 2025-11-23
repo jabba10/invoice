@@ -66,7 +66,7 @@ const InvoiceNavbar = () => {
         <div className={styles.navbarBrand}>
           <Link href="/" className={styles.logo} onClick={closeMenu}>
             <span className={styles.logoIcon}>🧾</span>
-            <span className={styles.logoText}>InvoiceGen</span>
+            <span className={styles.logoText}>NoFeesInvoice</span>
           </Link>
         </div>
 

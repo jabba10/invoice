@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/_-rTJmxwLj7Eg7j7OJXsP/_buildManifest.js",
-    "static/_-rTJmxwLj7Eg7j7OJXsP/_ssgManifest.js"
+    "static/86y9gguLK2CYZ-dTQYYP-/_buildManifest.js",
+    "static/86y9gguLK2CYZ-dTQYYP-/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -52,8 +52,8 @@
       "static/chunks/643144ee-f37582e299aa8894.js",
       "static/chunks/1d2671aa-c456cea009a6d795.js",
       "static/chunks/115-1dfd209117c9ba86.js",
-      "static/css/7ed42de858d3fac9.css",
-      "static/chunks/pages/free-invoice-generator-609054ba5e954411.js"
+      "static/css/e07ee2537c751308.css",
+      "static/chunks/pages/free-invoice-generator-dff90bbc395e7522.js"
     ],
     "/not-found-page": [
       "static/chunks/webpack-841238221739f57a.js",

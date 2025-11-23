@@ -33,7 +33,6 @@ export default function InvoiceGenerator() {
     terms: 'Payment due within 30 days. Late payments subject to 1.5% monthly interest.',
     paymentInstructions: 'Make checks payable to: Your Company Name\nBank Transfer: Account #123456789 • Routing #987654321\nPayPal: payments@yourcompany.com'
   });
-
   const [colorScheme, setColorScheme] = useState({
     primary: '#1f2937',
     secondary: '#2563eb',
@@ -47,7 +46,6 @@ export default function InvoiceGenerator() {
   const [signature, setSignature] = useState(null);
   const [activeTab, setActiveTab] = useState('details');
   const [logoError, setLogoError] = useState('');
-
   const previewRef = useRef(null);
 
   // Comprehensive currency list
@@ -107,7 +105,6 @@ export default function InvoiceGenerator() {
     metaDescription.name = 'description';
     metaDescription.content = 'Free professional invoice generator. Create, customize, and download beautiful invoices for your business. Supports multiple currencies and PDF export.';
     document.head.appendChild(metaDescription);
-
     const metaKeywords = document.createElement('meta');
     metaKeywords.name = 'keywords';
     metaKeywords.content = 'invoice generator, professional invoices, PDF invoices, business invoices, free invoice maker, online invoice creator';
@@ -141,11 +138,10 @@ export default function InvoiceGenerator() {
     setInvoice(prev => {
       const updatedItems = prev.items.map(item => {
         if (item.id === id) {
-          const updatedItem = { 
-            ...item, 
-            [field]: field === 'quantity' || field === 'rate' || field === 'amount' ? parseFloat(value) || 0 : value 
+          const updatedItem = {
+            ...item,
+            [field]: field === 'quantity' || field === 'rate' || field === 'amount' ? parseFloat(value) || 0 : value
           };
-          
           // If quantity or rate changes, auto-calculate amount
           if (field === 'quantity' || field === 'rate') {
             updatedItem.amount = updatedItem.quantity * updatedItem.rate;
@@ -156,7 +152,6 @@ export default function InvoiceGenerator() {
               updatedItem.rate = parseFloat(value) / updatedItem.quantity;
             }
           }
-          
           return updatedItem;
         }
         return item;
@@ -190,31 +185,35 @@ export default function InvoiceGenerator() {
     if (!input) return;
 
     html2canvas(input, {
-      scale: 3, // Higher scale for better PDF quality
+      scale: 2, // Reduced scale for better performance, can be increased if needed
       logging: false,
       useCORS: true,
       allowTaint: true,
-      backgroundColor: '#ffffff'
+      backgroundColor: '#ffffff',
+      // Ensure all content is captured on smaller screens
+      scrollX: 0,
+      scrollY: 0,
+      windowWidth: document.documentElement.offsetWidth,
+      windowHeight: document.documentElement.offsetHeight,
     }).then(canvas => {
       const imgData = canvas.toDataURL('image/png', 1.0);
       const pdf = new jsPDF('p', 'mm', 'a4');
-      const imgWidth = 190;
-      const pageHeight = 295;
+      const imgWidth = 190; // Standard A4 width minus margins
+      const pageHeight = 297; // Standard A4 height
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      
       let heightLeft = imgHeight;
-      let position = 10;
+      let position = 10; // Top margin
 
       pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
       heightLeft -= pageHeight;
 
+      // Handle multi-page PDFs if necessary
       while (heightLeft >= 0) {
         position = heightLeft - imgHeight;
         pdf.addPage();
         pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
         heightLeft -= pageHeight;
       }
-
       pdf.save(`invoice_${invoice.invoiceNumber}.pdf`);
     });
   };
@@ -227,7 +226,6 @@ export default function InvoiceGenerator() {
       setLogoError('File size must be less than 2MB');
       return;
     }
-
     const validTypes = ['image/jpeg', 'image/png', 'image/svg+xml', 'image/gif'];
     if (!validTypes.includes(file.type)) {
       setLogoError('Only JPG, PNG, SVG, and GIF files are allowed');
@@ -266,16 +264,14 @@ export default function InvoiceGenerator() {
   const formatCurrency = (amount) => {
     const currencyObj = currencies.find(c => c.code === currency);
     const symbol = currencyObj ? currencyObj.symbol : '$';
-    
     // For currencies that typically don't use decimal places
     const noDecimalCurrencies = ['JPY', 'KRW', 'VND', 'IDR', 'ISK'];
     const minimumFractionDigits = noDecimalCurrencies.includes(currency) ? 0 : 2;
-    
+
     // For currencies that use different formatting
     if (currency === 'JPY') {
       return `${symbol}${amount.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
     }
-    
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: currency,
@@ -289,7 +285,7 @@ export default function InvoiceGenerator() {
   }
 
   return (
-    <div 
+    <div
       className={styles.invoiceGenerator}
       style={{
         '--primary': colorScheme.primary,
@@ -304,8 +300,8 @@ export default function InvoiceGenerator() {
         <div className={styles.seoContainer}>
           <h1 className={styles.seoTitle}>Professional Invoice Generator - Create Free Custom Invoices</h1>
           <p className={styles.seoDescription}>
-            Generate professional invoices instantly with our free online invoice generator. 
-            Customize templates, add your logo, calculate taxes, and export to PDF. 
+            Generate professional invoices instantly with our free online invoice generator.
+            Customize templates, add your logo, calculate taxes, and export to PDF.
             Perfect for freelancers, small businesses, and enterprises.
           </p>
           <div className={styles.seoFeatures}>
@@ -333,79 +329,77 @@ export default function InvoiceGenerator() {
       <div className={styles.generatorContainer}>
         <div className={styles.formSection}>
           <div className={styles.formTabs}>
-            <button 
-              className={`${styles.tabButton} ${activeTab === 'details' ? styles.active : ''}`} 
+            <button
+              className={`${styles.tabButton} ${activeTab === 'details' ? styles.active : ''}`}
               onClick={() => setActiveTab('details')}
             >
               👤 Client Details
             </button>
-            <button 
-              className={`${styles.tabButton} ${activeTab === 'items' ? styles.active : ''}`} 
+            <button
+              className={`${styles.tabButton} ${activeTab === 'items' ? styles.active : ''}`}
               onClick={() => setActiveTab('items')}
             >
               📋 Invoice Items
             </button>
-            <button 
-              className={`${styles.tabButton} ${activeTab === 'settings' ? styles.active : ''}`} 
+            <button
+              className={`${styles.tabButton} ${activeTab === 'settings' ? styles.active : ''}`}
               onClick={() => setActiveTab('settings')}
             >
               ⚙ Company Settings
             </button>
           </div>
-
           {activeTab === 'details' && (
             <div className={styles.detailsForm}>
               <h3>👤 Client Information</h3>
               {['name', 'email', 'address', 'city', 'phone'].map(field => (
                 <div key={field} className={styles.formGroup}>
                   <label>
-                    {field === 'name' ? 'Client Name' : 
-                     field === 'email' ? 'Client Email' :
-                     field === 'address' ? 'Client Address' :
-                     field === 'city' ? 'City/State/Zip' : 'Client Phone'}
+                    {field === 'name' ? 'Client Name' :
+                      field === 'email' ? 'Client Email' :
+                        field === 'address' ? 'Client Address' :
+                          field === 'city' ? 'City/State/Zip' : 'Client Phone'}
                   </label>
-                  <input 
+                  <input
                     type={field === 'email' ? 'email' : field === 'phone' ? 'tel' : 'text'}
                     value={invoice.to[field] || ''}
                     onChange={(e) => handleInputChange(e, 'to', field)}
                     placeholder={
                       field === 'name' ? 'Client Company Name' :
-                      field === 'email' ? 'client@company.com' :
-                      field === 'address' ? '123 Client Street' :
-                      field === 'city' ? 'City, State ZIP' : '(555) 123-4567'
+                        field === 'email' ? 'client@company.com' :
+                          field === 'address' ? '123 Client Street' :
+                            field === 'city' ? 'City, State ZIP' : '(555) 123-4567'
                     }
                     className={styles.input}
                   />
                 </div>
               ))}
-
               <h3>📅 Invoice Details</h3>
               <div className={styles.dateRow}>
                 <div className={styles.formGroup}>
                   <label>Invoice Number</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={invoice.invoiceNumber || ''}
-                    onChange={(e) => handleInputChange(e, null, 'invoiceNumber')} 
+                    onChange={(e) => handleInputChange(e, null, 'invoiceNumber')}
                     className={styles.input}
                   />
                 </div>
                 <div className={styles.dateInputs}>
                   <div className={styles.formGroup}>
                     <label>Invoice Date</label>
-                    <input 
-                      type="date" 
+                    <input
+                      type="date"
                       value={invoice.date || ''}
-                      onChange={(e) => handleInputChange(e, null, 'date')} 
+                      onChange={(e) => handleInputChange(e, null, 'date')}
                       className={styles.input}
                     />
                   </div>
                   <div className={styles.formGroup}>
                     <label>Due Date</label>
-                    <input 
-                      type="date" 
+                    <input
+                      type="date"
                       value={invoice.dueDate || ''}
-                      onChange={(e) => handleInputChange(e, null, 'dueDate')} 
+                      onChange={(e) => handleInputChange(e, null, 'dueDate')}
                       className={styles.input}
                     />
                   </div>
@@ -413,7 +407,6 @@ export default function InvoiceGenerator() {
               </div>
             </div>
           )}
-
           {activeTab === 'items' && (
             <div className={styles.itemsForm}>
               <h3>📋 Invoice Items & Services</h3>
@@ -477,7 +470,6 @@ export default function InvoiceGenerator() {
               <button onClick={addItem} className={styles.addItemBtn}>
                 ➕ Add Line Item
               </button>
-
               <div className={styles.totalsSection}>
                 <div className={styles.totalRow}>
                   <span>Subtotal:</span>
@@ -520,20 +512,18 @@ export default function InvoiceGenerator() {
               </div>
             </div>
           )}
-
           {activeTab === 'settings' && (
             <div className={styles.settingsForm}>
               <h3>⚙ Company & Branding</h3>
-              
               {['name', 'address', 'city', 'email', 'phone'].map(field => (
                 <div key={field} className={styles.formGroup}>
                   <label>
                     {field === 'name' ? 'Your Company Name' :
-                     field === 'address' ? 'Company Address' :
-                     field === 'city' ? 'City/State/Zip' :
-                     field === 'email' ? 'Contact Email' : 'Contact Phone'}
+                      field === 'address' ? 'Company Address' :
+                        field === 'city' ? 'City/State/Zip' :
+                          field === 'email' ? 'Contact Email' : 'Contact Phone'}
                   </label>
-                  <input 
+                  <input
                     type={field === 'email' ? 'email' : field === 'phone' ? 'tel' : 'text'}
                     value={invoice.from[field] || ''}
                     onChange={(e) => handleInputChange(e, 'from', field)}
@@ -541,11 +531,10 @@ export default function InvoiceGenerator() {
                   />
                 </div>
               ))}
-              
               <div className={styles.formGroup}>
                 <label>Currency</label>
-                <select 
-                  value={currency} 
+                <select
+                  value={currency}
                   onChange={(e) => setCurrency(e.target.value)}
                   className={styles.select}
                 >
@@ -556,24 +545,22 @@ export default function InvoiceGenerator() {
                   ))}
                 </select>
               </div>
-
               <div className={styles.formGroup}>
                 <label>Payment Instructions</label>
-                <textarea 
+                <textarea
                   value={invoice.paymentInstructions || ''}
-                  onChange={(e) => handleInputChange(e, null, 'paymentInstructions')} 
+                  onChange={(e) => handleInputChange(e, null, 'paymentInstructions')}
                   rows="3"
                   className={styles.textarea}
                   placeholder="Enter payment instructions..."
                 />
               </div>
-              
               <div className={styles.formGroup}>
                 <label>Company Logo</label>
-                <input 
-                  type="file" 
-                  accept="image/jpeg,image/png,image/svg+xml,image/gif" 
-                  onChange={handleLogoUpload} 
+                <input
+                  type="file"
+                  accept="image/jpeg,image/png,image/svg+xml,image/gif"
+                  onChange={handleLogoUpload}
                   className={styles.fileInput}
                 />
                 {logoError && <div className={styles.errorMessage}>{logoError}</div>}
@@ -586,13 +573,12 @@ export default function InvoiceGenerator() {
                   </div>
                 )}
               </div>
-              
               <div className={styles.formGroup}>
                 <label>Signature</label>
-                <input 
-                  type="file" 
-                  accept="image/*" 
-                  onChange={handleSignatureUpload} 
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={handleSignatureUpload}
                   className={styles.fileInput}
                 />
                 {signature && (
@@ -604,22 +590,20 @@ export default function InvoiceGenerator() {
                   </div>
                 )}
               </div>
-              
               <div className={styles.formGroup}>
                 <label>Notes</label>
-                <textarea 
+                <textarea
                   value={invoice.notes || ''}
-                  onChange={(e) => handleInputChange(e, null, 'notes')} 
+                  onChange={(e) => handleInputChange(e, null, 'notes')}
                   rows="2"
                   className={styles.textarea}
                 />
               </div>
-              
               <div className={styles.formGroup}>
                 <label>Terms & Conditions</label>
-                <textarea 
+                <textarea
                   value={invoice.terms || ''}
-                  onChange={(e) => handleInputChange(e, null, 'terms')} 
+                  onChange={(e) => handleInputChange(e, null, 'terms')}
                   rows="2"
                   className={styles.textarea}
                 />
@@ -634,7 +618,6 @@ export default function InvoiceGenerator() {
             <div className={styles.watermark}>
               {invoice.from.name || 'Your Company Name'}
             </div>
-
             {/* Professional Invoice Header */}
             <div className={styles.invoiceHeader}>
               <div className={styles.headerLeft}>
@@ -643,7 +626,6 @@ export default function InvoiceGenerator() {
                   <h2 className={styles.companyName}>{invoice.from.name || 'Your Company Name'}</h2>
                   <p className={styles.companyAddress}>{invoice.from.address || '123 Business Ave'}</p>
                   <p className={styles.companyCity}>{invoice.from.city || 'New York, NY 10001'}</p>
-                  
                 </div>
               </div>
               <div className={styles.invoiceTitleSection}>
@@ -664,7 +646,6 @@ export default function InvoiceGenerator() {
                 </div>
               </div>
             </div>
-
             {/* Bill From / Bill To Sections */}
             <div className={styles.invoiceParties}>
               <div className={styles.partySection}>
@@ -677,7 +658,6 @@ export default function InvoiceGenerator() {
                   <p>{invoice.from.phone || '(555) 123-4567'}</p>
                 </div>
               </div>
-              
               <div className={styles.partySection}>
                 <h3 className={styles.partyTitle}>Bill To:</h3>
                 <div className={styles.partyDetails}>
@@ -689,7 +669,6 @@ export default function InvoiceGenerator() {
                 </div>
               </div>
             </div>
-
             {/* Invoice Items Table */}
             <div className={styles.invoiceItemsTable}>
               <div className={styles.tableHeader}>
@@ -698,7 +677,6 @@ export default function InvoiceGenerator() {
                 <div className={styles.colRate}>Unit Price</div>
                 <div className={styles.colAmount}>Amount</div>
               </div>
-              
               {invoice.items.map((item, index) => (
                 <div key={item.id} className={styles.tableRow}>
                   <div className={styles.colDescription}>
@@ -716,7 +694,6 @@ export default function InvoiceGenerator() {
                 </div>
               ))}
             </div>
-
             {/* Invoice Totals */}
             <div className={styles.invoiceTotals}>
               <div className={styles.totalsContainer}>
@@ -742,7 +719,6 @@ export default function InvoiceGenerator() {
                 </div>
               </div>
             </div>
-
             {/* Invoice Footer */}
             <div className={styles.invoiceFooter}>
               <div className={styles.paymentInfo}>
@@ -761,7 +737,6 @@ export default function InvoiceGenerator() {
                   )}
                 </div>
               </div>
-              
               <div className={styles.notesTerms}>
                 {invoice.notes && (
                   <div className={styles.notesSection}>
@@ -771,7 +746,6 @@ export default function InvoiceGenerator() {
                     </div>
                   </div>
                 )}
-                
                 {invoice.terms && (
                   <div className={styles.termsSection}>
                     <h4>Terms & Conditions</h4>
@@ -781,7 +755,6 @@ export default function InvoiceGenerator() {
                   </div>
                 )}
               </div>
-              
               {signature && (
                 <div className={styles.signatureSection}>
                   <img src={signature} alt="Authorized Signature" className={styles.signatureImage} />
@@ -790,7 +763,6 @@ export default function InvoiceGenerator() {
                 </div>
               )}
             </div>
-
             {/* Invoice Footer Note */}
             <div className={styles.invoiceEndNote}>
               <p>Thank you for your business. Please contact us with any questions regarding this invoice.</p>
