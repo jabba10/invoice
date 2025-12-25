@@ -46,6 +46,7 @@ export default function InvoiceGenerator() {
   const [signature, setSignature] = useState(null);
   const [activeTab, setActiveTab] = useState('details');
   const [logoError, setLogoError] = useState('');
+  const [isDownloading, setIsDownloading] = useState(false);
   const previewRef = useRef(null);
 
   // Comprehensive currency list
@@ -109,6 +110,13 @@ export default function InvoiceGenerator() {
     metaKeywords.name = 'keywords';
     metaKeywords.content = 'invoice generator, professional invoices, PDF invoices, business invoices, free invoice maker, online invoice creator';
     document.head.appendChild(metaKeywords);
+    
+    // Add touch-friendly class to body
+    document.body.classList.add('touch-friendly');
+    
+    return () => {
+      document.body.classList.remove('touch-friendly');
+    };
   }, []);
 
   // Calculate totals
@@ -180,42 +188,52 @@ export default function InvoiceGenerator() {
     });
   };
 
-  const handleDownloadPDF = () => {
+  const handleDownloadPDF = async () => {
+    setIsDownloading(true);
     const input = previewRef.current;
-    if (!input) return;
+    if (!input) {
+      setIsDownloading(false);
+      return;
+    }
 
-    html2canvas(input, {
-      scale: 2, // Reduced scale for better performance, can be increased if needed
-      logging: false,
-      useCORS: true,
-      allowTaint: true,
-      backgroundColor: '#ffffff',
-      // Ensure all content is captured on smaller screens
-      scrollX: 0,
-      scrollY: 0,
-      windowWidth: document.documentElement.offsetWidth,
-      windowHeight: document.documentElement.offsetHeight,
-    }).then(canvas => {
+    try {
+      const canvas = await html2canvas(input, {
+        scale: 2,
+        logging: false,
+        useCORS: true,
+        allowTaint: true,
+        backgroundColor: '#ffffff',
+        scrollX: 0,
+        scrollY: 0,
+        windowWidth: document.documentElement.offsetWidth,
+        windowHeight: document.documentElement.offsetHeight,
+      });
+      
       const imgData = canvas.toDataURL('image/png', 1.0);
       const pdf = new jsPDF('p', 'mm', 'a4');
-      const imgWidth = 190; // Standard A4 width minus margins
-      const pageHeight = 297; // Standard A4 height
+      const imgWidth = 190;
+      const pageHeight = 297;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       let heightLeft = imgHeight;
-      let position = 10; // Top margin
+      let position = 10;
 
       pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
       heightLeft -= pageHeight;
 
-      // Handle multi-page PDFs if necessary
       while (heightLeft >= 0) {
         position = heightLeft - imgHeight;
         pdf.addPage();
         pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
         heightLeft -= pageHeight;
       }
+      
       pdf.save(`invoice_${invoice.invoiceNumber}.pdf`);
-    });
+    } catch (error) {
+      console.error('Error generating PDF:', error);
+      alert('Failed to generate PDF. Please try again.');
+    } finally {
+      setIsDownloading(false);
+    }
   };
 
   const handleLogoUpload = (e) => {
@@ -264,11 +282,9 @@ export default function InvoiceGenerator() {
   const formatCurrency = (amount) => {
     const currencyObj = currencies.find(c => c.code === currency);
     const symbol = currencyObj ? currencyObj.symbol : '$';
-    // For currencies that typically don't use decimal places
     const noDecimalCurrencies = ['JPY', 'KRW', 'VND', 'IDR', 'ISK'];
     const minimumFractionDigits = noDecimalCurrencies.includes(currency) ? 0 : 2;
 
-    // For currencies that use different formatting
     if (currency === 'JPY') {
       return `${symbol}${amount.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
     }
@@ -320,8 +336,12 @@ export default function InvoiceGenerator() {
           <p className={styles.subtitle}>Create and customize professional invoices in minutes</p>
         </div>
         <div className={styles.headerActions}>
-          <button className={styles.downloadBtn} onClick={handleDownloadPDF}>
-            📄 Download PDF Invoice
+          <button 
+            className={`${styles.downloadBtn} ${isDownloading ? styles.loading : ''}`} 
+            onClick={handleDownloadPDF}
+            disabled={isDownloading}
+          >
+            {isDownloading ? 'Generating PDF...' : '📄 Download PDF Invoice'}
           </button>
         </div>
       </div>
@@ -719,41 +739,43 @@ export default function InvoiceGenerator() {
                 </div>
               </div>
             </div>
-            {/* Invoice Footer */}
-            <div className={styles.invoiceFooter}>
-              <div className={styles.paymentInfo}>
-                <h4>Payment Instructions</h4>
-                <div className={styles.paymentContent}>
-                  {invoice.paymentInstructions ? (
-                    invoice.paymentInstructions.split('\n').map((line, index) => (
-                      <p key={index}>{line}</p>
-                    ))
-                  ) : (
-                    <>
-                      <p>Make checks payable to: <strong>{invoice.from.name || 'Your Company'}</strong></p>
-                      <p>Bank Transfer: Account #123456789 • Routing #987654321</p>
-                      <p>PayPal: payments@yourcompany.com</p>
-                    </>
+            {/* Payment Instructions, Notes, Terms & Conditions at Bottom */}
+            <div className={styles.invoiceBottomSections}>
+              <div className={styles.bottomGrid}>
+                <div className={styles.paymentInfo}>
+                  <h4>Payment Instructions</h4>
+                  <div className={styles.paymentContent}>
+                    {invoice.paymentInstructions ? (
+                      invoice.paymentInstructions.split('\n').map((line, index) => (
+                        <p key={index}>{line}</p>
+                      ))
+                    ) : (
+                      <>
+                        <p>Make checks payable to: <strong>{invoice.from.name || 'Your Company'}</strong></p>
+                        <p>Bank Transfer: Account #123456789 • Routing #987654321</p>
+                        <p>PayPal: payments@yourcompany.com</p>
+                      </>
+                    )}
+                  </div>
+                </div>
+                <div className={styles.notesTermsColumn}>
+                  {invoice.notes && (
+                    <div className={styles.notesSection}>
+                      <h4>Notes</h4>
+                      <div className={styles.notesContent}>
+                        <p>{invoice.notes}</p>
+                      </div>
+                    </div>
+                  )}
+                  {invoice.terms && (
+                    <div className={styles.termsSection}>
+                      <h4>Terms & Conditions</h4>
+                      <div className={styles.termsContent}>
+                        <p>{invoice.terms}</p>
+                      </div>
+                    </div>
                   )}
                 </div>
-              </div>
-              <div className={styles.notesTerms}>
-                {invoice.notes && (
-                  <div className={styles.notesSection}>
-                    <h4>Notes</h4>
-                    <div className={styles.notesContent}>
-                      <p>{invoice.notes}</p>
-                    </div>
-                  </div>
-                )}
-                {invoice.terms && (
-                  <div className={styles.termsSection}>
-                    <h4>Terms & Conditions</h4>
-                    <div className={styles.termsContent}>
-                      <p>{invoice.terms}</p>
-                    </div>
-                  </div>
-                )}
               </div>
               {signature && (
                 <div className={styles.signatureSection}>
@@ -769,6 +791,17 @@ export default function InvoiceGenerator() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Download Button Card - Appears at bottom on small screens */}
+      <div className={styles.downloadCard}>
+        <button 
+          className={`${styles.downloadBtn} ${isDownloading ? styles.loading : ''}`} 
+          onClick={handleDownloadPDF}
+          disabled={isDownloading}
+        >
+          {isDownloading ? 'Generating PDF...' : '📄 Download PDF Invoice'}
+        </button>
       </div>
 
       {/* SEO Footer Section */}

@@ -30,6 +30,7 @@ const Footer = () => {
           <ul className={styles.footerLinks}>
             <li><Link href="/privacy-policy" className={styles.footerLink}>Privacy Policy</Link></li>
             <li><Link href="/terms-of-service" className={styles.footerLink}>Terms of Service</Link></li>
+        
           </ul>
         </div>
       </div>
