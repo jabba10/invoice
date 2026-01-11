@@ -1,0 +1,387 @@
+/* [project]/src/components/Navbar.module.css [client] (css) */
+.Navbar-module__cJzEcG__invoiceNavbar {
+  --primary: #1f2937;
+  --secondary: #2563eb;
+  --accent: #10b981;
+  --background: #fff;
+  --text: #374151;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 3px #0000001a;
+}
+
+.Navbar-module__cJzEcG__navbarContainer {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 4rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__navbarBrand {
+  align-items: center;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__logo {
+  color: var(--primary);
+  align-items: center;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__logo:hover {
+  color: var(--secondary);
+  transform: translateY(-1px);
+}
+
+.Navbar-module__cJzEcG__logoIcon {
+  align-items: center;
+  margin-right: .5rem;
+  font-size: 1.75rem;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__logoText {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.Navbar-module__cJzEcG__navbarLinks {
+  align-items: center;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__navList {
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__navItem {
+  position: relative;
+}
+
+.Navbar-module__cJzEcG__navLink {
+  color: var(--text);
+  border-radius: 6px;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .3s;
+  display: block;
+  position: relative;
+}
+
+.Navbar-module__cJzEcG__navLink:hover {
+  color: var(--secondary);
+  background: #f8fafc;
+  transform: translateY(-1px);
+}
+
+.Navbar-module__cJzEcG__navLink:after {
+  content: "";
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+  width: 0;
+  height: 2px;
+  transition: all .3s;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Navbar-module__cJzEcG__navLink:hover:after {
+  width: 80%;
+}
+
+.Navbar-module__cJzEcG__menuToggle {
+  cursor: pointer;
+  z-index: 1001;
+  background: none;
+  border: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  display: none;
+  position: relative;
+}
+
+.Navbar-module__cJzEcG__menuToggle span {
+  background: var(--primary);
+  transform-origin: center;
+  border-radius: 1px;
+  width: 100%;
+  height: 2px;
+  transition: all .3s;
+  display: block;
+}
+
+.Navbar-module__cJzEcG__menuToggle.Navbar-module__cJzEcG__open span:first-child {
+  background: var(--secondary);
+  transform: rotate(45deg)translate(6px, 6px);
+}
+
+.Navbar-module__cJzEcG__menuToggle.Navbar-module__cJzEcG__open span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.Navbar-module__cJzEcG__menuToggle.Navbar-module__cJzEcG__open span:nth-child(3) {
+  background: var(--secondary);
+  transform: rotate(-45deg)translate(6px, -6px);
+}
+
+@media (max-width: 768px) {
+  .Navbar-module__cJzEcG__navbarContainer {
+    height: 3.5rem;
+    padding: 0 1rem;
+  }
+
+  .Navbar-module__cJzEcG__menuToggle {
+    display: flex;
+  }
+
+  .Navbar-module__cJzEcG__navbarLinks {
+    z-index: 999;
+    background: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    padding-top: 5rem;
+    transition: right .3s;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    box-shadow: -4px 0 20px #0000001a;
+  }
+
+  .Navbar-module__cJzEcG__navbarLinks.Navbar-module__cJzEcG__open {
+    right: 0;
+  }
+
+  .Navbar-module__cJzEcG__navList {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .Navbar-module__cJzEcG__navItem {
+    border-bottom: 1px solid #f1f5f9;
+    width: 100%;
+  }
+
+  .Navbar-module__cJzEcG__navItem:last-child {
+    border-bottom: none;
+  }
+
+  .Navbar-module__cJzEcG__navLink {
+    text-align: left;
+    border-radius: 0;
+    width: 100%;
+    padding: 1rem .75rem;
+    font-size: 1.125rem;
+    transition: all .3s;
+    display: block;
+  }
+
+  .Navbar-module__cJzEcG__navLink:hover {
+    color: var(--secondary);
+    background: #f8fafc;
+    transform: none;
+  }
+
+  .Navbar-module__cJzEcG__navLink:after {
+    display: none;
+  }
+
+  .Navbar-module__cJzEcG__navbarLinks.Navbar-module__cJzEcG__open:before {
+    content: "";
+    z-index: -1;
+    background: #00000080;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .Navbar-module__cJzEcG__logo {
+    font-size: 1.375rem;
+  }
+
+  .Navbar-module__cJzEcG__logoIcon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar-module__cJzEcG__navbarContainer {
+    height: 3.25rem;
+    padding: 0 .75rem;
+  }
+
+  .Navbar-module__cJzEcG__logo {
+    font-size: 1.25rem;
+  }
+
+  .Navbar-module__cJzEcG__logoIcon {
+    margin-right: .375rem;
+    font-size: 1.375rem;
+  }
+
+  .Navbar-module__cJzEcG__navbarLinks {
+    width: 85%;
+    max-width: 280px;
+  }
+
+  .Navbar-module__cJzEcG__navList {
+    padding: 0 1rem;
+  }
+
+  .Navbar-module__cJzEcG__navLink {
+    padding: .875rem .5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .Navbar-module__cJzEcG__invoiceNavbar {
+    background: #1e293b;
+    border-bottom-color: #334155;
+    box-shadow: 0 1px 3px #0000004d;
+  }
+
+  .Navbar-module__cJzEcG__logo {
+    color: #e2e8f0;
+  }
+
+  .Navbar-module__cJzEcG__logo:hover {
+    color: #60a5fa;
+  }
+
+  .Navbar-module__cJzEcG__logoText {
+    background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .Navbar-module__cJzEcG__navLink {
+    color: #e2e8f0;
+  }
+
+  .Navbar-module__cJzEcG__navLink:hover {
+    color: #60a5fa;
+    background: #334155;
+  }
+
+  .Navbar-module__cJzEcG__menuToggle span {
+    background: #e2e8f0;
+  }
+
+  .Navbar-module__cJzEcG__menuToggle.Navbar-module__cJzEcG__open span {
+    background: #60a5fa;
+  }
+
+  @media (max-width: 768px) {
+    .Navbar-module__cJzEcG__navbarLinks {
+      background: #1e293b;
+    }
+
+    .Navbar-module__cJzEcG__navItem {
+      border-bottom-color: #334155;
+    }
+
+    .Navbar-module__cJzEcG__navLink:hover {
+      background: #334155;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Navbar-module__cJzEcG__logo, .Navbar-module__cJzEcG__navLink, .Navbar-module__cJzEcG__menuToggle span, .Navbar-module__cJzEcG__navbarLinks {
+    transition: none;
+  }
+
+  .Navbar-module__cJzEcG__logo:hover, .Navbar-module__cJzEcG__navLink:hover {
+    transform: none;
+  }
+
+  .Navbar-module__cJzEcG__menuToggle.Navbar-module__cJzEcG__open span {
+    transition: none;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .Navbar-module__cJzEcG__invoiceNavbar {
+    border-bottom: 2px solid var(--primary);
+  }
+
+  .Navbar-module__cJzEcG__navLink {
+    border: 1px solid #0000;
+  }
+
+  .Navbar-module__cJzEcG__navLink:hover {
+    border: 1px solid var(--secondary);
+  }
+
+  @media (max-width: 768px) {
+    .Navbar-module__cJzEcG__navItem {
+      border-bottom: 2px solid var(--primary);
+    }
+  }
+}
+
+.Navbar-module__cJzEcG__logo:focus-visible, .Navbar-module__cJzEcG__navLink:focus-visible, .Navbar-module__cJzEcG__menuToggle:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.Navbar-module__cJzEcG__navLink[aria-current="page"] {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.Navbar-module__cJzEcG__navLink[aria-current="page"]:after {
+  width: 80%;
+}
+
+.Navbar-module__cJzEcG__navLink:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.Navbar-module__cJzEcG__navLink[href^="#"] {
+  scroll-behavior: smooth;
+}
+
+@media print {
+  .Navbar-module__cJzEcG__invoiceNavbar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_components_Navbar_module_css_65f1660e._.single.css.map*/

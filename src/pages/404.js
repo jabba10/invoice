@@ -38,14 +38,14 @@ const Custom404 = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        /* CSS Variables for consistent theming */
+      <style jsx global>{`
+        /* CSS Variables for consistent theming - Matching AboutUs patterns */
         :root {
           --primary: #1f2937;
           --secondary: #2563eb;
           --accent: #10b981;
-          --button-bg: #1e40af; /* Dark blue color */
-          --button-hover: #1e3a8a; /* Darker blue for hover */
+          --button-bg: #1e40af;
+          --button-hover: #1e3a8a;
           --background: #ffffff;
           --text: #374151;
           --error-bg: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -54,21 +54,22 @@ const Custom404 = () => {
           --border-radius: 12px;
         }
 
-        /* Base Container - Mobile First */
+        /* Base Container - Mobile First (Matches AboutUs patterns) */
         .errorContainer {
           background: var(--error-bg);
           color: var(--text);
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
           min-height: 100vh;
-          min-height: 100dvh; /* Dynamic viewport height for mobile */
+          min-height: 100dvh;
           line-height: 1.6;
           scroll-behavior: smooth;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 16px;
+          padding: 1rem;
           width: 100%;
           box-sizing: border-box;
+          overflow-x: hidden;
         }
 
         /* Error Content Wrapper */
@@ -76,9 +77,10 @@ const Custom404 = () => {
           width: 100%;
           max-width: 600px;
           margin: 0 auto;
+          box-sizing: border-box;
         }
 
-        /* Error Hero Section */
+        /* Error Hero Section - Matching AboutUs hero patterns */
         .errorHero {
           background: var(--hero-bg);
           color: white;
@@ -110,6 +112,7 @@ const Custom404 = () => {
           position: relative;
           z-index: 2;
           width: 100%;
+          box-sizing: border-box;
         }
 
         /* 404 Number Styling */
@@ -123,9 +126,11 @@ const Custom404 = () => {
           -webkit-text-fill-color: transparent;
           background-clip: text;
           opacity: 0.9;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
         }
 
-        /* Error Title */
+        /* Error Title - Matching AboutUs heading patterns */
         .errorTitle {
           font-size: 1.75rem;
           font-weight: 700;
@@ -133,9 +138,11 @@ const Custom404 = () => {
           line-height: 1.3;
           color: white;
           letter-spacing: -0.02em;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
         }
 
-        /* Error Description */
+        /* Error Description - Matching AboutUs paragraph patterns */
         .errorDescription {
           font-size: 1.0625rem;
           margin-bottom: 2.5rem;
@@ -145,6 +152,8 @@ const Custom404 = () => {
           max-width: 400px;
           margin-left: auto;
           margin-right: auto;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
         }
 
         /* Button Container */
@@ -152,9 +161,10 @@ const Custom404 = () => {
           display: flex;
           justify-content: center;
           width: 100%;
+          box-sizing: border-box;
         }
 
-        /* Enhanced Responsive Button - Dark Blue with White Text */
+        /* Enhanced Responsive Button - Matching AboutUs button patterns */
         .ctaButton {
           display: inline-flex;
           align-items: center;
@@ -178,6 +188,9 @@ const Custom404 = () => {
           line-height: 1.2;
           width: auto;
           max-width: 280px;
+          box-sizing: border-box;
+          white-space: normal;
+          word-wrap: break-word;
         }
 
         .ctaButtonPrimary {
@@ -185,7 +198,7 @@ const Custom404 = () => {
           color: white;
         }
 
-        /* Button States */
+        /* Button States - Matching AboutUs hover patterns */
         .ctaButton:hover {
           transform: translateY(-2px);
           box-shadow: 0 8px 25px rgba(30, 64, 175, 0.5);
@@ -203,7 +216,7 @@ const Custom404 = () => {
           outline-offset: 2px;
         }
 
-        /* Ripple Effect */
+        /* Ripple Effect - Matching AboutUs patterns */
         .ctaButton::after {
           content: '';
           position: absolute;
@@ -225,12 +238,140 @@ const Custom404 = () => {
           transition: 0s;
         }
 
-        /* ===== RESPONSIVE BREAKPOINTS ===== */
+        /* ===== RESPONSIVE BREAKPOINTS (Matching AboutUs patterns) ===== */
+
+        /* Large Desktop (1440px and above) */
+        @media (min-width: 1440px) {
+          .errorContent {
+            max-width: 700px;
+          }
+
+          .errorHero {
+            padding: 6rem 4rem;
+          }
+
+          .errorNumber {
+            font-size: 7rem;
+          }
+
+          .errorTitle {
+            font-size: 2.5rem;
+          }
+
+          .errorDescription {
+            font-size: 1.375rem;
+            margin-bottom: 4rem;
+          }
+
+          .ctaButton {
+            padding: 1.125rem 3.5rem;
+            font-size: 1.25rem;
+            min-height: 64px;
+            min-width: 260px;
+          }
+        }
+
+        /* Desktop (1024px - 1439px) */
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          .errorContent {
+            max-width: 650px;
+          }
+
+          .errorHero {
+            padding: 5rem 3rem;
+          }
+
+          .errorNumber {
+            font-size: 6rem;
+          }
+
+          .errorTitle {
+            font-size: 2.25rem;
+          }
+
+          .errorDescription {
+            font-size: 1.25rem;
+            margin-bottom: 3.5rem;
+          }
+        }
+
+        /* Tablets (768px - 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .errorContainer {
+            padding: 1.5rem;
+          }
+
+          .errorHero {
+            padding: 4rem 2rem;
+          }
+
+          .errorNumber {
+            font-size: 5.5rem;
+          }
+
+          .errorTitle {
+            font-size: 2rem;
+          }
+
+          .errorDescription {
+            font-size: 1.125rem;
+            margin-bottom: 3rem;
+          }
+
+          .ctaButton {
+            padding: 1rem 3rem;
+            font-size: 1.125rem;
+            min-height: 60px;
+            min-width: 240px;
+          }
+        }
+
+        /* Large Phones (425px - 767px) */
+        @media (min-width: 425px) and (max-width: 767px) {
+          .errorHero {
+            padding: 3rem 1.5rem;
+          }
+
+          .errorNumber {
+            font-size: 4.5rem;
+          }
+
+          .errorTitle {
+            font-size: 1.625rem;
+          }
+
+          .errorDescription {
+            font-size: 1.0625rem;
+          }
+        }
+
+        /* Medium Phones (375px - 424px) */
+        @media (min-width: 375px) and (max-width: 424px) {
+          .errorHero {
+            padding: 2.5rem 1.25rem;
+          }
+
+          .errorNumber {
+            font-size: 4rem;
+          }
+
+          .errorTitle {
+            font-size: 1.5rem;
+          }
+
+          .errorDescription {
+            font-size: 1rem;
+          }
+
+          .ctaButton {
+            min-width: 200px;
+          }
+        }
 
         /* Small Phones (320px - 374px) */
         @media (max-width: 374px) {
           .errorContainer {
-            padding: 12px;
+            padding: 0.75rem;
           }
 
           .errorHero {
@@ -264,134 +405,6 @@ const Custom404 = () => {
           }
         }
 
-        /* Medium Phones (375px - 424px) */
-        @media (min-width: 375px) and (max-width: 424px) {
-          .errorHero {
-            padding: 2.5rem 1.25rem;
-          }
-
-          .errorNumber {
-            font-size: 4rem;
-          }
-
-          .errorTitle {
-            font-size: 1.5rem;
-          }
-
-          .errorDescription {
-            font-size: 1rem;
-          }
-
-          .ctaButton {
-            min-width: 200px;
-          }
-        }
-
-        /* Large Phones (425px - 767px) */
-        @media (min-width: 425px) and (max-width: 767px) {
-          .errorHero {
-            padding: 3rem 1.5rem;
-          }
-
-          .errorNumber {
-            font-size: 4.5rem;
-          }
-
-          .errorTitle {
-            font-size: 1.625rem;
-          }
-
-          .errorDescription {
-            font-size: 1.0625rem;
-          }
-        }
-
-        /* Tablets (768px - 1023px) */
-        @media (min-width: 768px) and (max-width: 1023px) {
-          .errorContainer {
-            padding: 24px;
-          }
-
-          .errorHero {
-            padding: 4rem 2rem;
-          }
-
-          .errorNumber {
-            font-size: 5.5rem;
-          }
-
-          .errorTitle {
-            font-size: 2rem;
-          }
-
-          .errorDescription {
-            font-size: 1.125rem;
-            margin-bottom: 3rem;
-          }
-
-          .ctaButton {
-            padding: 1rem 3rem;
-            font-size: 1.125rem;
-            min-height: 60px;
-            min-width: 240px;
-          }
-        }
-
-        /* Desktop (1024px - 1439px) */
-        @media (min-width: 1024px) and (max-width: 1439px) {
-          .errorContent {
-            max-width: 650px;
-          }
-
-          .errorHero {
-            padding: 5rem 3rem;
-          }
-
-          .errorNumber {
-            font-size: 6rem;
-          }
-
-          .errorTitle {
-            font-size: 2.25rem;
-          }
-
-          .errorDescription {
-            font-size: 1.25rem;
-            margin-bottom: 3.5rem;
-          }
-        }
-
-        /* Large Desktop (1440px and above) */
-        @media (min-width: 1440px) {
-          .errorContent {
-            max-width: 700px;
-          }
-
-          .errorHero {
-            padding: 6rem 4rem;
-          }
-
-          .errorNumber {
-            font-size: 7rem;
-          }
-
-          .errorTitle {
-            font-size: 2.5rem;
-          }
-
-          .errorDescription {
-            font-size: 1.375rem;
-            margin-bottom: 4rem;
-          }
-
-          .ctaButton {
-            padding: 1.125rem 3.5rem;
-            font-size: 1.25rem;
-            min-height: 64px;
-            min-width: 260px;
-          }
-        }
-
         /* Ultra-wide screens (1920px and above) */
         @media (min-width: 1920px) {
           .errorContent {
@@ -403,7 +416,7 @@ const Custom404 = () => {
           }
         }
 
-        /* ===== ACCESSIBILITY & ENHANCEMENTS ===== */
+        /* ===== ACCESSIBILITY & ENHANCEMENTS (Matching AboutUs patterns) ===== */
 
         /* Touch Device Optimizations */
         @media (hover: none) and (pointer: coarse) {
@@ -444,7 +457,7 @@ const Custom404 = () => {
           }
         }
 
-        /* Dark Mode Support */
+        /* Dark Mode Support - Matching AboutUs dark mode */
         @media (prefers-color-scheme: dark) {
           :root {
             --error-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -476,9 +489,9 @@ const Custom404 = () => {
         /* Portrait Orientation Optimizations */
         @media (max-height: 600px) and (orientation: portrait) {
           .errorContainer {
-            padding: 20px;
+            padding: 1.25rem;
             align-items: flex-start;
-            padding-top: 40px;
+            padding-top: 2.5rem;
           }
           
           .errorHero {
@@ -489,7 +502,7 @@ const Custom404 = () => {
         /* Landscape Orientation Optimizations */
         @media (max-height: 500px) and (orientation: landscape) {
           .errorContainer {
-            padding: 10px;
+            padding: 0.625rem;
           }
           
           .errorHero {
@@ -526,6 +539,30 @@ const Custom404 = () => {
           .errorNumber {
             font-size: 2.5rem;
           }
+        }
+
+        /* Fix text overflow - Matching AboutUs overflow prevention */
+        .errorNumber,
+        .errorTitle,
+        .errorDescription,
+        .ctaButton {
+          hyphens: auto;
+          -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+        }
+
+        /* Prevent horizontal scrolling */
+        .errorContainer,
+        .errorContent,
+        .errorHero {
+          max-width: 100%;
+        }
+
+        /* Button text overflow fix */
+        .ctaButton {
+          white-space: normal;
+          overflow-wrap: break-word;
+          text-align: center;
         }
       `}</style>
     </>

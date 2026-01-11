@@ -1,0 +1,11 @@
+__turbopack_load_page_chunks__("/free-invoice-generator", [
+  "static/chunks/82829d44ce7bf6c5.js",
+  "static/chunks/0cc5d0282af64628.js",
+  "static/chunks/e1c4537e272e5eed.js",
+  "static/chunks/cd1b411d8006a714.js",
+  "static/chunks/f399d45263924e71.js",
+  "static/chunks/3257d665f94c94a7.js",
+  "static/chunks/1412d8d7ac4e68d6.js",
+  "static/chunks/93dfe539b60acfe5.css",
+  "static/chunks/turbopack-e44373a48f546057.js"
+])

@@ -1,0 +1,581 @@
+/* [project]/src/pages/ContactUs.module.css [client] (css) */
+.ContactUs-module__8O3XXW__contactPage {
+  --primary: #1f2937;
+  --secondary: #2563eb;
+  --accent: #10b981;
+  --background: #fff;
+  --text: #374151;
+  color: var(--text);
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  min-height: 100vh;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+
+.ContactUs-module__8O3XXW__hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ContactUs-module__8O3XXW__hero:before {
+  content: "";
+  opacity: .3;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: absolute;
+  inset: 0;
+}
+
+.ContactUs-module__8O3XXW__heroContent {
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ContactUs-module__8O3XXW__hero h1 {
+  background: linear-gradient(135deg, #fff 0%, #e5e7eb 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.ContactUs-module__8O3XXW__hero p {
+  opacity: .9;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+}
+
+.ContactUs-module__8O3XXW__features {
+  background: #fff;
+  padding: 5rem 1rem;
+}
+
+.ContactUs-module__8O3XXW__sectionTitle {
+  text-align: center;
+  color: var(--primary);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.ContactUs-module__8O3XXW__cards {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.ContactUs-module__8O3XXW__card {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px #00000014;
+}
+
+.ContactUs-module__8O3XXW__card:before {
+  content: "";
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.ContactUs-module__8O3XXW__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px #00000026;
+}
+
+.ContactUs-module__8O3XXW__card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ContactUs-module__8O3XXW__card p {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ContactUs-module__8O3XXW__contactFormSection {
+  background: #f8fafc;
+  padding: 5rem 1rem;
+}
+
+.ContactUs-module__8O3XXW__contactForm {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  box-shadow: 0 4px 12px #00000014;
+}
+
+.ContactUs-module__8O3XXW__formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.ContactUs-module__8O3XXW__formGroup label {
+  color: var(--primary);
+  margin-bottom: .5rem;
+  font-size: .95rem;
+  font-weight: 600;
+  display: block;
+}
+
+.ContactUs-module__8O3XXW__formGroup input, .ContactUs-module__8O3XXW__formGroup textarea {
+  width: 100%;
+  color: var(--text);
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: .875rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all .3s;
+}
+
+.ContactUs-module__8O3XXW__formGroup input:focus, .ContactUs-module__8O3XXW__formGroup textarea:focus {
+  border-color: var(--secondary);
+  outline: none;
+  box-shadow: 0 0 0 3px #2563eb1a;
+}
+
+.ContactUs-module__8O3XXW__formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.5;
+}
+
+.ContactUs-module__8O3XXW__submitBtn {
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all .3s;
+  box-shadow: 0 4px 12px #10b9814d;
+}
+
+.ContactUs-module__8O3XXW__submitBtn:hover:not(:disabled) {
+  background: #0da271;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px #10b98166;
+}
+
+.ContactUs-module__8O3XXW__submitBtn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.ContactUs-module__8O3XXW__alert {
+  border: 1px solid #0000;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+}
+
+.ContactUs-module__8O3XXW__alert.ContactUs-module__8O3XXW__success {
+  color: #166534;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.ContactUs-module__8O3XXW__alert.ContactUs-module__8O3XXW__error {
+  color: #991b1b;
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.ContactUs-module__8O3XXW__contactInfo {
+  background: #fff;
+  padding: 4rem 1rem;
+}
+
+.ContactUs-module__8O3XXW__infoGrid {
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.ContactUs-module__8O3XXW__infoItem {
+  padding: 2rem 1rem;
+}
+
+.ContactUs-module__8O3XXW__infoIcon {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  display: block;
+}
+
+.ContactUs-module__8O3XXW__infoItem h3 {
+  color: var(--primary);
+  margin-bottom: .5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.ContactUs-module__8O3XXW__infoItem p {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.ContactUs-module__8O3XXW__faqSection {
+  background: #f8fafc;
+  padding: 5rem 1rem;
+}
+
+.ContactUs-module__8O3XXW__faqGrid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ContactUs-module__8O3XXW__faqItem {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #0000000f;
+}
+
+.ContactUs-module__8O3XXW__faqQuestion {
+  color: var(--primary);
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  font-weight: 600;
+  transition: background-color .3s;
+  display: flex;
+}
+
+.ContactUs-module__8O3XXW__faqQuestion:hover {
+  background: #f8fafc;
+}
+
+.ContactUs-module__8O3XXW__faqAnswer {
+  color: #64748b;
+  padding: 0 1.5rem 1.5rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .ContactUs-module__8O3XXW__hero h1 {
+    font-size: 3rem;
+  }
+
+  .ContactUs-module__8O3XXW__sectionTitle {
+    font-size: 2.25rem;
+  }
+
+  .ContactUs-module__8O3XXW__cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .ContactUs-module__8O3XXW__contactForm {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ContactUs-module__8O3XXW__hero {
+    padding: 4rem 1rem;
+  }
+
+  .ContactUs-module__8O3XXW__hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .ContactUs-module__8O3XXW__hero p {
+    font-size: 1.125rem;
+  }
+
+  .ContactUs-module__8O3XXW__features, .ContactUs-module__8O3XXW__contactFormSection, .ContactUs-module__8O3XXW__contactInfo, .ContactUs-module__8O3XXW__faqSection {
+    padding: 3rem 1rem;
+  }
+
+  .ContactUs-module__8O3XXW__sectionTitle {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .ContactUs-module__8O3XXW__cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 500px;
+  }
+
+  .ContactUs-module__8O3XXW__card {
+    padding: 2rem 1.5rem;
+  }
+
+  .ContactUs-module__8O3XXW__contactForm {
+    padding: 2rem;
+  }
+
+  .ContactUs-module__8O3XXW__infoGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ContactUs-module__8O3XXW__infoItem {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ContactUs-module__8O3XXW__hero {
+    padding: 3rem 1rem;
+  }
+
+  .ContactUs-module__8O3XXW__hero h1 {
+    font-size: 2rem;
+  }
+
+  .ContactUs-module__8O3XXW__hero p {
+    font-size: 1rem;
+  }
+
+  .ContactUs-module__8O3XXW__features, .ContactUs-module__8O3XXW__contactFormSection, .ContactUs-module__8O3XXW__contactInfo, .ContactUs-module__8O3XXW__faqSection {
+    padding: 2rem 1rem;
+  }
+
+  .ContactUs-module__8O3XXW__sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .ContactUs-module__8O3XXW__card {
+    padding: 1.5rem 1rem;
+  }
+
+  .ContactUs-module__8O3XXW__card h3 {
+    font-size: 1.25rem;
+  }
+
+  .ContactUs-module__8O3XXW__contactForm {
+    padding: 1.5rem;
+  }
+
+  .ContactUs-module__8O3XXW__formGroup input, .ContactUs-module__8O3XXW__formGroup textarea {
+    padding: .75rem;
+    font-size: .95rem;
+  }
+
+  .ContactUs-module__8O3XXW__submitBtn {
+    padding: .875rem 2rem;
+    font-size: 1rem;
+  }
+
+  .ContactUs-module__8O3XXW__infoIcon {
+    font-size: 2rem;
+  }
+
+  .ContactUs-module__8O3XXW__faqQuestion {
+    padding: 1.25rem;
+    font-size: .95rem;
+  }
+
+  .ContactUs-module__8O3XXW__faqAnswer {
+    padding: 0 1.25rem 1.25rem;
+    font-size: .9rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .ContactUs-module__8O3XXW__contactPage {
+    color: #e2e8f0;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+
+  .ContactUs-module__8O3XXW__features, .ContactUs-module__8O3XXW__contactInfo {
+    color: #e2e8f0;
+    background: #1e293b;
+  }
+
+  .ContactUs-module__8O3XXW__card {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .ContactUs-module__8O3XXW__card h3 {
+    color: #e2e8f0;
+  }
+
+  .ContactUs-module__8O3XXW__card p {
+    color: #94a3b8;
+  }
+
+  .ContactUs-module__8O3XXW__contactFormSection {
+    background: #0f172a;
+  }
+
+  .ContactUs-module__8O3XXW__contactForm {
+    color: #e2e8f0;
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .ContactUs-module__8O3XXW__formGroup label {
+    color: #e2e8f0;
+  }
+
+  .ContactUs-module__8O3XXW__formGroup input, .ContactUs-module__8O3XXW__formGroup textarea {
+    color: #e2e8f0;
+    background: #334155;
+    border-color: #475569;
+  }
+
+  .ContactUs-module__8O3XXW__formGroup input:focus, .ContactUs-module__8O3XXW__formGroup textarea:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px #2563eb33;
+  }
+
+  .ContactUs-module__8O3XXW__formGroup input::placeholder, .ContactUs-module__8O3XXW__formGroup textarea::placeholder {
+    color: #94a3b8;
+  }
+
+  .ContactUs-module__8O3XXW__sectionTitle {
+    background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .ContactUs-module__8O3XXW__infoItem h3 {
+    color: #e2e8f0;
+  }
+
+  .ContactUs-module__8O3XXW__infoItem p {
+    color: #94a3b8;
+  }
+
+  .ContactUs-module__8O3XXW__faqSection {
+    background: #0f172a;
+  }
+
+  .ContactUs-module__8O3XXW__faqItem {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .ContactUs-module__8O3XXW__faqQuestion {
+    color: #e2e8f0;
+  }
+
+  .ContactUs-module__8O3XXW__faqQuestion:hover {
+    background: #334155;
+  }
+
+  .ContactUs-module__8O3XXW__faqAnswer {
+    color: #94a3b8;
+  }
+
+  .ContactUs-module__8O3XXW__alert.ContactUs-module__8O3XXW__success {
+    color: #86efac;
+    background: #1a4531;
+    border-color: #22c55e;
+  }
+
+  .ContactUs-module__8O3XXW__alert.ContactUs-module__8O3XXW__error {
+    color: #fca5a5;
+    background: #451a1a;
+    border-color: #ef4444;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ContactUs-module__8O3XXW__contactPage {
+    scroll-behavior: auto;
+  }
+
+  .ContactUs-module__8O3XXW__card, .ContactUs-module__8O3XXW__submitBtn, .ContactUs-module__8O3XXW__formGroup input, .ContactUs-module__8O3XXW__formGroup textarea, .ContactUs-module__8O3XXW__faqQuestion {
+    transition: none;
+  }
+
+  .ContactUs-module__8O3XXW__card:hover, .ContactUs-module__8O3XXW__submitBtn:hover:not(:disabled) {
+    transform: none;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .ContactUs-module__8O3XXW__card, .ContactUs-module__8O3XXW__contactForm, .ContactUs-module__8O3XXW__formGroup input, .ContactUs-module__8O3XXW__formGroup textarea {
+    border: 2px solid var(--primary);
+  }
+
+  .ContactUs-module__8O3XXW__submitBtn {
+    border: 2px solid;
+  }
+
+  .ContactUs-module__8O3XXW__faqItem {
+    border: 2px solid var(--primary);
+  }
+}
+
+@media print {
+  .ContactUs-module__8O3XXW__contactPage {
+    scroll-behavior: auto;
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  .ContactUs-module__8O3XXW__hero {
+    color: #000 !important;
+    background: #f8fafc !important;
+  }
+
+  .ContactUs-module__8O3XXW__contactForm {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+
+  .ContactUs-module__8O3XXW__submitBtn {
+    display: none !important;
+  }
+
+  .ContactUs-module__8O3XXW__card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+}
+
+.ContactUs-module__8O3XXW__submitBtn:focus-visible, .ContactUs-module__8O3XXW__formGroup input:focus-visible, .ContactUs-module__8O3XXW__formGroup textarea:focus-visible, .ContactUs-module__8O3XXW__card:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+/*# sourceMappingURL=src_pages_ContactUs_module_9dd24066.css.map*/

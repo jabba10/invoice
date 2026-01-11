@@ -1,0 +1,17 @@
+(globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
+    script: typeof document === "object" ? document.currentScript : undefined,
+    chunks: [
+  "static/chunks/node_modules_ee3110e2._.js",
+  "static/chunks/[root-of-the-server]__134b1cdc._.js",
+  "static/chunks/node_modules_next_dist_compiled_8ca6b690._.js",
+  "static/chunks/node_modules_next_dist_shared_lib_8bac8163._.js",
+  "static/chunks/node_modules_next_dist_client_5a8a528e._.js",
+  "static/chunks/node_modules_next_dist_75b597d7._.js",
+  "static/chunks/node_modules_react-dom_4411d9bd._.js",
+  "static/chunks/node_modules_html2canvas_dist_html2canvas_c5f8e195.js",
+  "static/chunks/node_modules_jspdf_dist_jspdf_es_min_32a1d50f.js",
+  "static/chunks/node_modules_53420d03._.js",
+  "static/chunks/src_pages_Invoice_module_73ecdea2.css"
+],
+    source: "entry"
+});

@@ -1,0 +1,480 @@
+/* [project]/src/pages/Custom404.module.css [client] (css) */
+:root {
+  --primary: #1f2937;
+  --secondary: #2563eb;
+  --accent: #10b981;
+  --button-bg: #1e40af;
+  --button-hover: #1e3a8a;
+  --background: #fff;
+  --text: #374151;
+  --error-bg: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  --hero-bg: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  --shadow: 0 20px 40px #0000001a;
+  --border-radius: 12px;
+}
+
+.Custom404-module__MB5iSG__errorContainer {
+  background: var(--error-bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100dvh;
+  padding: 16px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.Custom404-module__MB5iSG__errorContent {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Custom404-module__MB5iSG__errorHero {
+  background: var(--hero-bg);
+  color: #fff;
+  text-align: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.Custom404-module__MB5iSG__errorHero:before {
+  content: "";
+  opacity: .3;
+  pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: absolute;
+  inset: 0;
+}
+
+.Custom404-module__MB5iSG__errorHeroContent {
+  z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Custom404-module__MB5iSG__errorNumber {
+  background: linear-gradient(135deg, #fff 0%, #e5e7eb 100%);
+  -webkit-text-fill-color: transparent;
+  opacity: .9;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-clip: text;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.Custom404-module__MB5iSG__errorTitle {
+  color: #fff;
+  letter-spacing: -.02em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.Custom404-module__MB5iSG__errorDescription {
+  opacity: .9;
+  color: #fffffff2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 400px;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.Custom404-module__MB5iSG__buttonContainer {
+  box-sizing: border-box;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+.Custom404-module__MB5iSG__ctaButton {
+  background: var(--button-bg);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  white-space: normal;
+  word-wrap: break-word;
+  border: none;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-width: 220px;
+  max-width: 280px;
+  min-height: 56px;
+  padding: .875rem 2.5rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1);
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 14px #1e40af66;
+}
+
+.Custom404-module__MB5iSG__ctaButtonPrimary {
+  background: var(--button-bg);
+  color: #fff;
+}
+
+.Custom404-module__MB5iSG__ctaButton:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px #1e40af80;
+}
+
+.Custom404-module__MB5iSG__ctaButton:active {
+  transition: all .1s;
+  transform: translateY(0);
+  box-shadow: 0 2px 10px #1e40af4d;
+}
+
+.Custom404-module__MB5iSG__ctaButton:focus-visible {
+  outline-offset: 2px;
+  outline: 3px solid #fffc;
+}
+
+.Custom404-module__MB5iSG__ctaButton:after {
+  content: "";
+  opacity: 0;
+  background: #ffffff4d;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  transition: width .3s, height .3s, opacity .3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Custom404-module__MB5iSG__ctaButton:active:after {
+  opacity: 0;
+  width: 120px;
+  height: 120px;
+  transition: all;
+}
+
+@media (max-width: 374px) {
+  .Custom404-module__MB5iSG__errorContainer {
+    padding: 12px;
+  }
+
+  .Custom404-module__MB5iSG__errorHero {
+    border-radius: 10px;
+    padding: 2rem 1rem;
+  }
+
+  .Custom404-module__MB5iSG__errorNumber {
+    margin-bottom: .75rem;
+    font-size: 3.5rem;
+  }
+
+  .Custom404-module__MB5iSG__errorTitle {
+    margin-bottom: .875rem;
+    font-size: 1.375rem;
+  }
+
+  .Custom404-module__MB5iSG__errorDescription {
+    margin-bottom: 2rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+  }
+
+  .Custom404-module__MB5iSG__ctaButton {
+    width: 100%;
+    min-width: 180px;
+    max-width: none;
+    min-height: 48px;
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .Custom404-module__MB5iSG__errorHero {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .Custom404-module__MB5iSG__errorNumber {
+    font-size: 4rem;
+  }
+
+  .Custom404-module__MB5iSG__errorTitle {
+    font-size: 1.5rem;
+  }
+
+  .Custom404-module__MB5iSG__errorDescription {
+    font-size: 1rem;
+  }
+
+  .Custom404-module__MB5iSG__ctaButton {
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .Custom404-module__MB5iSG__errorHero {
+    padding: 3rem 1.5rem;
+  }
+
+  .Custom404-module__MB5iSG__errorNumber {
+    font-size: 4.5rem;
+  }
+
+  .Custom404-module__MB5iSG__errorTitle {
+    font-size: 1.625rem;
+  }
+
+  .Custom404-module__MB5iSG__errorDescription {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Custom404-module__MB5iSG__errorContainer {
+    padding: 24px;
+  }
+
+  .Custom404-module__MB5iSG__errorHero {
+    padding: 4rem 2rem;
+  }
+
+  .Custom404-module__MB5iSG__errorNumber {
+    font-size: 5.5rem;
+  }
+
+  .Custom404-module__MB5iSG__errorTitle {
+    font-size: 2rem;
+  }
+
+  .Custom404-module__MB5iSG__errorDescription {
+    margin-bottom: 3rem;
+    font-size: 1.125rem;
+  }
+
+  .Custom404-module__MB5iSG__ctaButton {
+    min-width: 240px;
+    min-height: 60px;
+    padding: 1rem 3rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .Custom404-module__MB5iSG__errorContent {
+    max-width: 650px;
+  }
+
+  .Custom404-module__MB5iSG__errorHero {
+    padding: 5rem 3rem;
+  }
+
+  .Custom404-module__MB5iSG__errorNumber {
+    font-size: 6rem;
+  }
+
+  .Custom404-module__MB5iSG__errorTitle {
+    font-size: 2.25rem;
+  }
+
+  .Custom404-module__MB5iSG__errorDescription {
+    margin-bottom: 3.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Custom404-module__MB5iSG__errorContent {
+    max-width: 700px;
+  }
+
+  .Custom404-module__MB5iSG__errorHero {
+    padding: 6rem 4rem;
+  }
+
+  .Custom404-module__MB5iSG__errorNumber {
+    font-size: 7rem;
+  }
+
+  .Custom404-module__MB5iSG__errorTitle {
+    font-size: 2.5rem;
+  }
+
+  .Custom404-module__MB5iSG__errorDescription {
+    margin-bottom: 4rem;
+    font-size: 1.375rem;
+  }
+
+  .Custom404-module__MB5iSG__ctaButton {
+    min-width: 260px;
+    min-height: 64px;
+    padding: 1.125rem 3.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .Custom404-module__MB5iSG__errorContent {
+    max-width: 800px;
+  }
+
+  .Custom404-module__MB5iSG__errorHero {
+    padding: 7rem 5rem;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .Custom404-module__MB5iSG__ctaButton:hover {
+    transform: none;
+  }
+
+  .Custom404-module__MB5iSG__ctaButton:active {
+    transform: scale(.98);
+    box-shadow: 0 2px 8px #1e40af4d;
+  }
+
+  @media (max-width: 768px) {
+    .Custom404-module__MB5iSG__ctaButton {
+      min-height: 52px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Custom404-module__MB5iSG__errorContainer {
+    scroll-behavior: auto;
+  }
+
+  .Custom404-module__MB5iSG__ctaButton {
+    transition: none;
+  }
+
+  .Custom404-module__MB5iSG__ctaButton:hover, .Custom404-module__MB5iSG__ctaButton:active {
+    transform: none;
+  }
+
+  .Custom404-module__MB5iSG__ctaButton:after {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .Custom404-module__MB5iSG__errorContainer {
+    --error-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --hero-bg: linear-gradient(135deg, #1e293b 0%, #2563eb 100%);
+    --button-bg: #1e40af;
+    --button-hover: #1e3a8a;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .Custom404-module__MB5iSG__ctaButton {
+    border: 2px solid;
+  }
+
+  .Custom404-module__MB5iSG__errorDescription {
+    opacity: 1;
+  }
+}
+
+.Custom404-module__MB5iSG__ctaButton:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+@media (max-height: 600px) and (orientation: portrait) {
+  .Custom404-module__MB5iSG__errorContainer {
+    align-items: flex-start;
+    padding: 40px 20px 20px;
+  }
+
+  .Custom404-module__MB5iSG__errorHero {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .Custom404-module__MB5iSG__errorContainer {
+    padding: 10px;
+  }
+
+  .Custom404-module__MB5iSG__errorHero {
+    padding: 1.5rem 2rem;
+  }
+
+  .Custom404-module__MB5iSG__errorNumber {
+    margin-bottom: .5rem;
+    font-size: 3rem;
+  }
+
+  .Custom404-module__MB5iSG__errorTitle {
+    margin-bottom: .5rem;
+    font-size: 1.375rem;
+  }
+
+  .Custom404-module__MB5iSG__errorDescription {
+    margin-bottom: 1.5rem;
+    font-size: .9375rem;
+  }
+
+  .Custom404-module__MB5iSG__ctaButton {
+    min-height: 44px;
+    padding: .625rem 1.5rem;
+  }
+}
+
+@media (max-height: 400px) {
+  .Custom404-module__MB5iSG__errorHero {
+    padding: 1rem 1.5rem;
+  }
+
+  .Custom404-module__MB5iSG__errorNumber {
+    font-size: 2.5rem;
+  }
+}
+
+.Custom404-module__MB5iSG__errorNumber, .Custom404-module__MB5iSG__errorTitle, .Custom404-module__MB5iSG__errorDescription, .Custom404-module__MB5iSG__ctaButton {
+  hyphens: auto;
+}
+
+.Custom404-module__MB5iSG__errorContainer, .Custom404-module__MB5iSG__errorContent, .Custom404-module__MB5iSG__errorHero {
+  max-width: 100%;
+}
+
+.Custom404-module__MB5iSG__ctaButton {
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+/*# sourceMappingURL=src_pages_Custom404_module_85f99882.css.map*/

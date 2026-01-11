@@ -1,8 +1,13 @@
 {
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/free-invoice-generator": "pages/free-invoice-generator.js",
-  "/free-invoice-generator-certificate": "pages/free-invoice-generator-certificate.js"
+  "/404": "pages/404.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/aboutus": "pages/aboutus.js",
+  "/contact-us": "pages/contact-us.html",
+  "/free-invoice-generator": "pages/free-invoice-generator.html",
+  "/free-invoice-generator-certificate": "pages/free-invoice-generator-certificate.html",
+  "/privacy-policy": "pages/privacy-policy.html",
+  "/testimonials": "pages/testimonials.html"
 }

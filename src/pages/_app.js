@@ -5,7 +5,7 @@ import Script from 'next/script';
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import './globals.css';
+
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();

@@ -29,7 +29,7 @@ const Footer = () => {
           <h3 className={styles.footerTitle}>Legal</h3>
           <ul className={styles.footerLinks}>
             <li><Link href="/privacy-policy" className={styles.footerLink}>Privacy Policy</Link></li>
-            <li><Link href="/terms-of-service" className={styles.footerLink}>Terms of Service</Link></li>
+          
         
           </ul>
         </div>
