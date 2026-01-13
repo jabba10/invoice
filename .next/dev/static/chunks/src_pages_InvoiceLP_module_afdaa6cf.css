@@ -2,7 +2,6 @@
 :root {
   --primary: #1f2937;
   --secondary: #2563eb;
-  --accent: #10b981;
   --background: #fff;
   --text: #374151;
   --text-light: #64748b;
@@ -11,13 +10,15 @@
   --shadow-hover: #0000001a;
   --card-bg: #fff;
   --section-bg: #f8fafc;
+  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, #111827 100%);
+  --gradient-accent: linear-gradient(135deg, var(--secondary) 0%, #059669 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #0f172a;
-    --secondary: #3b82f6;
-    --accent: #10b981;
+    --secondary: #10b981;
+    --accent: #60a5fa;
     --background: #0f172a;
     --text: #e2e8f0;
     --text-light: #94a3b8;
@@ -26,6 +27,7 @@
     --shadow-hover: #0000004d;
     --card-bg: #1e293b;
     --section-bg: #0f172a;
+    --gradient-primary: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   }
 }
 
@@ -59,16 +61,12 @@
   text-decoration: none;
 }
 
-.InvoiceLP-module__pHAR_W__container ul, .InvoiceLP-module__pHAR_W__container ol {
-  list-style: none;
-}
-
 .InvoiceLP-module__pHAR_W__hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   color: #fff;
   text-align: center;
   width: 100%;
-  padding: clamp(2rem, 5vw, 4rem) 1rem;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -91,14 +89,14 @@
 }
 
 .InvoiceLP-module__pHAR_W__heroTitle {
-  background: linear-gradient(135deg, #fff 0%, #e5e7eb 100%);
+  background: linear-gradient(135deg, #fff 0%, #d1d5db 100%);
   -webkit-text-fill-color: transparent;
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
   background-clip: text;
-  margin-bottom: 1rem;
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
   line-height: 1.2;
 }
@@ -106,11 +104,11 @@
 .InvoiceLP-module__pHAR_W__heroSubtitle {
   opacity: .9;
   word-wrap: break-word;
-  max-width: min(600px, 90%);
-  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+  max-width: min(800px, 90%);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
   margin-left: auto;
   margin-right: auto;
-  font-size: clamp(.9375rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   line-height: 1.6;
 }
 
@@ -126,9 +124,9 @@
 .InvoiceLP-module__pHAR_W__heroStats {
   flex-wrap: wrap;
   justify-content: center;
-  gap: clamp(1rem, 3vw, 2rem);
+  gap: clamp(1.5rem, 4vw, 3rem);
   width: 100%;
-  margin-top: clamp(1.5rem, 3vw, 2rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
   display: flex;
 }
 
@@ -136,11 +134,13 @@
   text-align: center;
   flex: 1;
   min-width: 100px;
+  max-width: 200px;
 }
 
 .InvoiceLP-module__pHAR_W__stat strong {
-  margin-bottom: .25rem;
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  color: var(--secondary);
+  margin-bottom: .5rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
   display: block;
 }
@@ -148,7 +148,7 @@
 .InvoiceLP-module__pHAR_W__stat span {
   opacity: .8;
   white-space: nowrap;
-  font-size: clamp(.75rem, 1.5vw, .875rem);
+  font-size: clamp(.875rem, 2vw, 1rem);
   display: block;
 }
 
@@ -157,119 +157,133 @@
   text-align: center;
   white-space: nowrap;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   justify-content: center;
   align-items: center;
   width: auto;
-  min-width: 120px;
+  min-width: 140px;
   max-width: 100%;
-  min-height: 44px;
-  padding: .75rem 1.5rem;
-  font-size: .875rem;
+  min-height: 48px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
-  transition: all .2s;
+  transition: all .3s;
   display: inline-flex;
   position: relative;
   overflow: hidden;
 }
 
 .InvoiceLP-module__pHAR_W__btnPrimary {
-  background: var(--accent);
+  background: var(--gradient-accent);
   color: #fff;
-  box-shadow: 0 2px 8px #10b98140;
+  box-shadow: 0 4px 15px #10b9814d;
 }
 
 .InvoiceLP-module__pHAR_W__btnSecondary {
   color: #fff;
-  box-shadow: none;
-  background: none;
-  border: 1.5px solid #fff6;
+  background: #ffffff1a;
+  border: 2px solid #ffffff4d;
+  box-shadow: 0 2px 8px #ffffff1a;
 }
 
 .InvoiceLP-module__pHAR_W__btnLarge {
-  min-width: 140px;
-  min-height: 48px;
-  padding: .875rem 1.75rem;
-  font-size: .9375rem;
+  border-radius: 10px;
+  min-width: 180px;
+  min-height: 56px;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
 }
 
 .InvoiceLP-module__pHAR_W__btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px #10b98159;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px #10b98166;
 }
 
 .InvoiceLP-module__pHAR_W__btnPrimary:hover {
-  background: #0da271;
+  background: linear-gradient(135deg, #0da271 0%, #047857 100%);
 }
 
 .InvoiceLP-module__pHAR_W__btnSecondary:hover {
-  background: #ffffff1a;
+  background: #fff3;
   border-color: #fff9;
 }
 
 .InvoiceLP-module__pHAR_W__btn:active {
   transform: translateY(0);
-  box-shadow: 0 1px 4px #10b98133;
+  box-shadow: 0 2px 4px #10b98133;
 }
 
 .InvoiceLP-module__pHAR_W__btn:focus-visible {
-  outline: 2px solid var(--secondary);
+  outline: 3px solid var(--accent);
   outline-offset: 2px;
 }
 
 .InvoiceLP-module__pHAR_W__sectionHeader {
   text-align: center;
   width: 100%;
-  max-width: min(800px, 90%);
-  margin: 0 auto clamp(2rem, 4vw, 3rem);
+  max-width: min(900px, 90%);
+  margin: 0 auto clamp(3rem, 5vw, 4rem);
 }
 
 .InvoiceLP-module__pHAR_W__sectionTitle {
   color: var(--primary);
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
   -webkit-text-fill-color: transparent;
   word-wrap: break-word;
   background-clip: text;
-  margin-bottom: 1rem;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 700;
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
 }
 
 .InvoiceLP-module__pHAR_W__sectionSubtitle {
   color: var(--text-light);
   word-wrap: break-word;
-  font-size: clamp(.9375rem, 2vw, 1.0625rem);
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.6;
 }
 
 .InvoiceLP-module__pHAR_W__features {
-  background: var(--card-bg);
+  background: var(--section-bg);
   width: 100%;
-  padding: clamp(2.5rem, 5vw, 4rem) 1rem;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
 }
 
 .InvoiceLP-module__pHAR_W__cards {
-  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 2rem;
   width: 100%;
   max-width: min(1200px, 95%);
   margin: 0 auto;
   display: grid;
 }
 
+.InvoiceLP-module__pHAR_W__cardLink {
+  color: inherit;
+  text-decoration: none;
+  transition: transform .3s;
+}
+
+.InvoiceLP-module__pHAR_W__cardLink:hover {
+  transform: translateY(-5px);
+}
+
 .InvoiceLP-module__pHAR_W__card {
   background: var(--card-bg);
   text-align: center;
-  box-shadow: 0 2px 8px var(--shadow);
+  box-shadow: 0 4px 20px var(--shadow);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  cursor: pointer;
+  border-radius: 12px;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 2vw, 1.5rem);
+  padding: 2rem;
   transition: all .3s;
   display: flex;
   position: relative;
@@ -278,8 +292,8 @@
 
 .InvoiceLP-module__pHAR_W__card:before {
   content: "";
-  background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
-  height: 3px;
+  background: var(--gradient-accent);
+  height: 4px;
   position: absolute;
   top: 0;
   left: 0;
@@ -287,14 +301,14 @@
 }
 
 .InvoiceLP-module__pHAR_W__card:hover {
-  box-shadow: 0 8px 20px var(--shadow-hover);
-  transform: translateY(-3px);
+  box-shadow: 0 12px 30px var(--shadow-hover);
+  transform: translateY(-5px);
 }
 
 .InvoiceLP-module__pHAR_W__cardIcon {
   min-height: 2.5rem;
-  margin-bottom: 1.25rem;
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
   display: block;
 }
 
@@ -302,8 +316,8 @@
   color: var(--primary);
   word-wrap: break-word;
   width: 100%;
-  margin-bottom: .75rem;
-  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
@@ -312,19 +326,32 @@
   word-wrap: break-word;
   flex-grow: 1;
   width: 100%;
-  font-size: clamp(.875rem, 1.5vw, .9375rem);
+  margin-bottom: 1rem;
+  font-size: .9375rem;
   line-height: 1.6;
 }
 
+.InvoiceLP-module__pHAR_W__cardCta {
+  color: var(--secondary);
+  margin-top: auto;
+  font-size: .875rem;
+  font-weight: 600;
+  transition: transform .3s;
+}
+
+.InvoiceLP-module__pHAR_W__cardLink:hover .InvoiceLP-module__pHAR_W__cardCta {
+  transform: translateX(5px);
+}
+
 .InvoiceLP-module__pHAR_W__howItWorks {
-  background: var(--section-bg);
+  background: var(--card-bg);
   width: 100%;
-  padding: clamp(2.5rem, 5vw, 4rem) 1rem;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
 }
 
 .InvoiceLP-module__pHAR_W__steps {
-  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 2rem;
   width: 100%;
   max-width: min(1000px, 95%);
   margin: 0 auto;
@@ -333,49 +360,130 @@
 
 .InvoiceLP-module__pHAR_W__step {
   text-align: center;
+  background: var(--section-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
   width: 100%;
-  padding: clamp(1rem, 2vw, 1.5rem) clamp(.5rem, 1.5vw, 1rem);
+  padding: 2rem;
+  transition: transform .3s;
+}
+
+.InvoiceLP-module__pHAR_W__step:hover {
+  transform: translateY(-3px);
 }
 
 .InvoiceLP-module__pHAR_W__stepNumber {
-  background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+  background: var(--gradient-accent);
   color: #fff;
   border-radius: 50%;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  width: clamp(44px, 6vw, 50px);
-  height: clamp(44px, 6vw, 50px);
-  margin: 0 auto clamp(1rem, 2vw, 1.25rem);
-  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
   display: flex;
+  box-shadow: 0 4px 15px #10b9814d;
 }
 
 .InvoiceLP-module__pHAR_W__step h3 {
   color: var(--primary);
   word-wrap: break-word;
-  margin-bottom: .75rem;
-  font-size: clamp(1.0625rem, 2vw, 1.125rem);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .InvoiceLP-module__pHAR_W__step p {
   color: var(--text-light);
   word-wrap: break-word;
-  font-size: clamp(.875rem, 1.5vw, .9375rem);
+  margin-bottom: 1rem;
+  font-size: .9375rem;
   line-height: 1.6;
 }
 
-.InvoiceLP-module__pHAR_W__testimonials {
-  background: var(--card-bg);
+.InvoiceLP-module__pHAR_W__stepLink {
+  color: var(--secondary);
+  font-size: .875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .3s;
+  display: inline-block;
+}
+
+.InvoiceLP-module__pHAR_W__stepLink:hover {
+  transform: translateX(5px);
+}
+
+.InvoiceLP-module__pHAR_W__demoSection {
+  background: var(--gradient-primary);
+  color: #fff;
   width: 100%;
-  padding: clamp(2.5rem, 5vw, 4rem) 1rem;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
+}
+
+.InvoiceLP-module__pHAR_W__demoContainer {
+  text-align: center;
+  max-width: min(800px, 95%);
+  margin: 0 auto;
+}
+
+.InvoiceLP-module__pHAR_W__demoPreview {
+  backdrop-filter: blur(10px);
+  background: #ffffff1a;
+  border: 1px solid #fff3;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.InvoiceLP-module__pHAR_W__invoicePreview {
+  background: var(--card-bg);
+  text-align: left;
+  color: var(--text);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.InvoiceLP-module__pHAR_W__invoiceHeader {
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.InvoiceLP-module__pHAR_W__invoiceHeader h3 {
+  color: var(--primary);
+  margin-bottom: .5rem;
+}
+
+.InvoiceLP-module__pHAR_W__invoiceHeader p {
+  color: var(--text-light);
+}
+
+.InvoiceLP-module__pHAR_W__invoiceDetails p {
+  justify-content: space-between;
+  margin-bottom: .75rem;
+  display: flex;
+}
+
+.InvoiceLP-module__pHAR_W__demoActions {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.InvoiceLP-module__pHAR_W__testimonials {
+  background: var(--section-bg);
+  width: 100%;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
 }
 
 .InvoiceLP-module__pHAR_W__testimonialCards {
-  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+  gap: 2rem;
   width: 100%;
   max-width: min(1200px, 95%);
   margin: 0 auto;
@@ -384,19 +492,19 @@
 
 .InvoiceLP-module__pHAR_W__testimonial {
   background: var(--card-bg);
-  box-shadow: 0 2px 8px var(--shadow);
+  box-shadow: 0 4px 20px var(--shadow);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 12px;
   width: 100%;
   height: 100%;
-  padding: clamp(1.5rem, 3vw, 2rem);
+  padding: 2rem;
   transition: all .3s;
   position: relative;
 }
 
 .InvoiceLP-module__pHAR_W__testimonial:hover {
-  box-shadow: 0 6px 16px var(--shadow-hover);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--shadow-hover);
+  transform: translateY(-3px);
 }
 
 .InvoiceLP-module__pHAR_W__testimonial:before {
@@ -404,11 +512,11 @@
   color: var(--accent);
   opacity: .2;
   font-family: serif;
-  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-size: 3rem;
   line-height: 1;
   position: absolute;
-  top: .75rem;
-  left: 1.25rem;
+  top: 1rem;
+  left: 1.5rem;
 }
 
 .InvoiceLP-module__pHAR_W__testimonialContent {
@@ -419,12 +527,18 @@
   position: relative;
 }
 
+.InvoiceLP-module__pHAR_W__rating {
+  color: #fbbf24;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
 .InvoiceLP-module__pHAR_W__testimonial p {
   color: var(--text);
   word-wrap: break-word;
   flex-grow: 1;
-  margin-bottom: clamp(1rem, 2vw, 1.25rem);
-  font-size: clamp(1rem, 1.5vw, 1.0625rem);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -436,8 +550,8 @@
 .InvoiceLP-module__pHAR_W__testimonialAuthor strong {
   color: var(--primary);
   word-wrap: break-word;
-  margin-bottom: .125rem;
-  font-size: clamp(.875rem, 1.5vw, .9375rem);
+  margin-bottom: .25rem;
+  font-size: 1rem;
   font-weight: 600;
   display: block;
 }
@@ -445,13 +559,13 @@
 .InvoiceLP-module__pHAR_W__testimonialAuthor span {
   color: var(--text-light);
   word-wrap: break-word;
-  font-size: clamp(.75rem, 1.5vw, .8125rem);
+  font-size: .875rem;
 }
 
 .InvoiceLP-module__pHAR_W__faq {
-  background: var(--section-bg);
+  background: var(--card-bg);
   width: 100%;
-  padding: clamp(2.5rem, 5vw, 4rem) 1rem;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
 }
 
 .InvoiceLP-module__pHAR_W__faqList {
@@ -461,56 +575,116 @@
 }
 
 .InvoiceLP-module__pHAR_W__faqItem {
-  background: var(--card-bg);
+  background: var(--section-bg);
+  box-shadow: 0 2px 8px var(--shadow);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   width: 100%;
   margin-bottom: 1rem;
-  padding: clamp(1.25rem, 2.5vw, 1.5rem);
-  box-shadow: 0 1px 4px #0000000a;
+  padding: 1.5rem 2rem;
+  transition: all .3s;
+}
+
+.InvoiceLP-module__pHAR_W__faqItem:hover {
+  border-color: var(--secondary);
+  transform: translateX(5px);
 }
 
 .InvoiceLP-module__pHAR_W__faqItem h3 {
   color: var(--primary);
   word-wrap: break-word;
   margin-bottom: .75rem;
-  font-size: clamp(1.0625rem, 2vw, 1.125rem);
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
 .InvoiceLP-module__pHAR_W__faqItem p {
   color: var(--text-light);
   word-wrap: break-word;
-  font-size: clamp(.875rem, 1.5vw, .9375rem);
+  font-size: .9375rem;
   line-height: 1.6;
 }
 
+.InvoiceLP-module__pHAR_W__resources {
+  background: var(--section-bg);
+  width: 100%;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
+}
+
+.InvoiceLP-module__pHAR_W__resourceGrid {
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: min(1200px, 95%);
+  margin: 0 auto;
+  display: grid;
+}
+
+.InvoiceLP-module__pHAR_W__resourceCard {
+  background: var(--card-bg);
+  text-align: center;
+  border: 1px solid var(--border);
+  color: inherit;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all .3s;
+  display: block;
+}
+
+.InvoiceLP-module__pHAR_W__resourceCard:hover {
+  box-shadow: 0 8px 20px var(--shadow-hover);
+  border-color: var(--secondary);
+  transform: translateY(-3px);
+}
+
+.InvoiceLP-module__pHAR_W__resourceIcon {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.InvoiceLP-module__pHAR_W__resourceCard h3 {
+  color: var(--primary);
+  margin-bottom: .5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.InvoiceLP-module__pHAR_W__resourceCard p {
+  color: var(--text-light);
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
 .InvoiceLP-module__pHAR_W__ctaSection {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: var(--gradient-primary);
   color: #fff;
   text-align: center;
   width: 100%;
-  padding: clamp(2.5rem, 5vw, 4rem) 1rem;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
 }
 
 .InvoiceLP-module__pHAR_W__ctaContent {
   width: 100%;
-  max-width: min(600px, 95%);
+  max-width: min(800px, 95%);
   margin: 0 auto;
 }
 
 .InvoiceLP-module__pHAR_W__ctaTitle {
   word-wrap: break-word;
-  margin-bottom: 1rem;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
 }
 
 .InvoiceLP-module__pHAR_W__ctaDescription {
   opacity: .9;
   word-wrap: break-word;
-  margin-bottom: clamp(1.5rem, 3vw, 2rem);
-  font-size: clamp(.9375rem, 2vw, 1.0625rem);
+  max-width: 700px;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.6;
 }
 
@@ -519,108 +693,69 @@
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   display: flex;
 }
 
 .InvoiceLP-module__pHAR_W__ctaNote {
   opacity: .8;
   word-wrap: break-word;
-  font-size: clamp(.75rem, 1.5vw, .875rem);
-}
-
-.InvoiceLP-module__pHAR_W__seoContent {
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-.InvoiceLP-module__pHAR_W__seoContent h2, .InvoiceLP-module__pHAR_W__seoContent h3, .InvoiceLP-module__pHAR_W__seoContent p, .InvoiceLP-module__pHAR_W__seoContent ul, .InvoiceLP-module__pHAR_W__seoContent li {
-  color: #0000;
-  background: none;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  font-size: 1px;
-  line-height: 1;
-}
-
-.InvoiceLP-module__pHAR_W__seoContent ul {
-  list-style: none;
+  font-size: .875rem;
 }
 
 @media (max-width: 768px) {
-  .InvoiceLP-module__pHAR_W__heroButtons, .InvoiceLP-module__pHAR_W__ctaButtons {
+  .InvoiceLP-module__pHAR_W__heroButtons, .InvoiceLP-module__pHAR_W__ctaButtons, .InvoiceLP-module__pHAR_W__demoActions {
     flex-direction: column;
     align-items: center;
-    gap: .75rem;
+    gap: 1rem;
   }
 
   .InvoiceLP-module__pHAR_W__btn, .InvoiceLP-module__pHAR_W__btnLarge {
     width: 100%;
     min-width: auto;
-    max-width: 280px;
+    max-width: 300px;
   }
 
-  .InvoiceLP-module__pHAR_W__cards, .InvoiceLP-module__pHAR_W__testimonialCards {
+  .InvoiceLP-module__pHAR_W__cards, .InvoiceLP-module__pHAR_W__testimonialCards, .InvoiceLP-module__pHAR_W__resourceGrid, .InvoiceLP-module__pHAR_W__steps {
     grid-template-columns: 1fr;
     max-width: 400px;
   }
 
   .InvoiceLP-module__pHAR_W__heroStats {
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
 
   .InvoiceLP-module__pHAR_W__stat {
     min-width: auto;
   }
+
+  .InvoiceLP-module__pHAR_W__sectionHeader {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .InvoiceLP-module__pHAR_W__hero, .InvoiceLP-module__pHAR_W__features, .InvoiceLP-module__pHAR_W__testimonials, .InvoiceLP-module__pHAR_W__howItWorks, .InvoiceLP-module__pHAR_W__faq, .InvoiceLP-module__pHAR_W__ctaSection {
-    padding-left: .75rem;
-    padding-right: .75rem;
+  .InvoiceLP-module__pHAR_W__hero, .InvoiceLP-module__pHAR_W__features, .InvoiceLP-module__pHAR_W__testimonials, .InvoiceLP-module__pHAR_W__howItWorks, .InvoiceLP-module__pHAR_W__faq, .InvoiceLP-module__pHAR_W__resources, .InvoiceLP-module__pHAR_W__demoSection, .InvoiceLP-module__pHAR_W__ctaSection {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .InvoiceLP-module__pHAR_W__btn {
-    min-height: 42px;
-    padding: .6875rem 1.25rem;
-    font-size: .8125rem;
+  .InvoiceLP-module__pHAR_W__card, .InvoiceLP-module__pHAR_W__testimonial, .InvoiceLP-module__pHAR_W__faqItem, .InvoiceLP-module__pHAR_W__resourceCard, .InvoiceLP-module__pHAR_W__step, .InvoiceLP-module__pHAR_W__demoPreview {
+    padding: 1.5rem;
   }
 
-  .InvoiceLP-module__pHAR_W__btnLarge {
-    min-height: 44px;
-    padding: .75rem 1.5rem;
-    font-size: .875rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .InvoiceLP-module__pHAR_W__hero, .InvoiceLP-module__pHAR_W__features, .InvoiceLP-module__pHAR_W__testimonials, .InvoiceLP-module__pHAR_W__howItWorks, .InvoiceLP-module__pHAR_W__faq, .InvoiceLP-module__pHAR_W__ctaSection {
-    padding: 2rem .5rem;
+  .InvoiceLP-module__pHAR_W__heroTitle {
+    font-size: 1.75rem;
   }
 
-  .InvoiceLP-module__pHAR_W__card, .InvoiceLP-module__pHAR_W__testimonial, .InvoiceLP-module__pHAR_W__faqItem {
-    padding: 1.25rem .75rem;
-  }
-
-  .InvoiceLP-module__pHAR_W__btn {
-    padding: .625rem 1rem;
-    font-size: .75rem;
+  .InvoiceLP-module__pHAR_W__sectionTitle {
+    font-size: 1.5rem;
   }
 }
 
 @media (hover: none) and (pointer: coarse) {
-  .InvoiceLP-module__pHAR_W__btn:hover, .InvoiceLP-module__pHAR_W__card:hover, .InvoiceLP-module__pHAR_W__testimonial:hover {
+  .InvoiceLP-module__pHAR_W__btn:hover, .InvoiceLP-module__pHAR_W__card:hover, .InvoiceLP-module__pHAR_W__testimonial:hover, .InvoiceLP-module__pHAR_W__resourceCard:hover, .InvoiceLP-module__pHAR_W__step:hover, .InvoiceLP-module__pHAR_W__faqItem:hover, .InvoiceLP-module__pHAR_W__cardLink:hover {
     transform: none;
   }
 
@@ -634,17 +769,17 @@
     scroll-behavior: auto;
   }
 
-  .InvoiceLP-module__pHAR_W__btn, .InvoiceLP-module__pHAR_W__card, .InvoiceLP-module__pHAR_W__testimonial {
+  .InvoiceLP-module__pHAR_W__btn, .InvoiceLP-module__pHAR_W__card, .InvoiceLP-module__pHAR_W__testimonial, .InvoiceLP-module__pHAR_W__resourceCard, .InvoiceLP-module__pHAR_W__step, .InvoiceLP-module__pHAR_W__faqItem, .InvoiceLP-module__pHAR_W__cardLink {
     transition: none;
   }
 
-  .InvoiceLP-module__pHAR_W__btn:hover, .InvoiceLP-module__pHAR_W__card:hover, .InvoiceLP-module__pHAR_W__testimonial:hover {
+  .InvoiceLP-module__pHAR_W__btn:hover, .InvoiceLP-module__pHAR_W__card:hover, .InvoiceLP-module__pHAR_W__testimonial:hover, .InvoiceLP-module__pHAR_W__resourceCard:hover, .InvoiceLP-module__pHAR_W__step:hover, .InvoiceLP-module__pHAR_W__faqItem:hover, .InvoiceLP-module__pHAR_W__cardLink:hover {
     transform: none;
   }
 }
 
 @media (prefers-contrast: high) {
-  .InvoiceLP-module__pHAR_W__card, .InvoiceLP-module__pHAR_W__testimonial, .InvoiceLP-module__pHAR_W__faqItem {
+  .InvoiceLP-module__pHAR_W__card, .InvoiceLP-module__pHAR_W__testimonial, .InvoiceLP-module__pHAR_W__faqItem, .InvoiceLP-module__pHAR_W__resourceCard, .InvoiceLP-module__pHAR_W__step, .InvoiceLP-module__pHAR_W__demoPreview {
     border: 2px solid var(--primary);
   }
 
@@ -659,7 +794,7 @@
     background: #fff !important;
   }
 
-  .InvoiceLP-module__pHAR_W__hero {
+  .InvoiceLP-module__pHAR_W__hero, .InvoiceLP-module__pHAR_W__demoSection, .InvoiceLP-module__pHAR_W__ctaSection {
     color: #000 !important;
     background: #f8fafc !important;
   }
@@ -668,14 +803,10 @@
     display: none !important;
   }
 
-  .InvoiceLP-module__pHAR_W__card, .InvoiceLP-module__pHAR_W__testimonial, .InvoiceLP-module__pHAR_W__faqItem {
+  .InvoiceLP-module__pHAR_W__card, .InvoiceLP-module__pHAR_W__testimonial, .InvoiceLP-module__pHAR_W__faqItem, .InvoiceLP-module__pHAR_W__resourceCard, .InvoiceLP-module__pHAR_W__step, .InvoiceLP-module__pHAR_W__demoPreview {
     break-inside: avoid;
     box-shadow: none !important;
     border: 1px solid #ccc !important;
-  }
-
-  .InvoiceLP-module__pHAR_W__seoContent {
-    display: none !important;
   }
 }
 
@@ -698,9 +829,19 @@
   transform: none !important;
 }
 
-.InvoiceLP-module__pHAR_W__btn:focus-visible, .InvoiceLP-module__pHAR_W__card:focus-visible {
-  outline: 2px solid var(--secondary);
+.InvoiceLP-module__pHAR_W__btn:focus-visible, .InvoiceLP-module__pHAR_W__card:focus-visible, .InvoiceLP-module__pHAR_W__resourceCard:focus-visible {
+  outline: 3px solid var(--accent);
   outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /*# sourceMappingURL=src_pages_InvoiceLP_module_afdaa6cf.css.map*/

@@ -6,43 +6,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
   const siteUrl = 'https://www.nofeesinvoice.com/free-invoice-generator';
   const imageUrl = 'https://www.nofeesinvoice.com/images/invoice-preview.jpg';
   const logoUrl = 'https://www.nofeesinvoice.com/images/logo.png';
-
-  // Comprehensive keyword list for invoice generator
-  const primaryKeywords = [
-    'free invoice generator',
-    'online invoice maker',
-    'create invoice free',
-    'professional invoice template',
-    'PDF invoice generator',
-    'small business invoicing',
-    'freelancer invoice tool',
-    'instant invoice creator',
-    'business invoice software',
-    'invoice generator online',
-    'free billing software',
-    'invoice creator tool',
-    'digital invoice maker',
-    'quick invoice generator',
-    'invoice template PDF'
-  ];
-
-  const secondaryKeywords = [
-    'no registration invoice tool',
-    'free invoice maker for small business',
-    'online invoice creator free',
-    'generate invoice PDF',
-    'custom invoice generator',
-    'invoice software free',
-    'create professional invoices',
-    'invoice generator 2024',
-    'best free invoice generator',
-    'invoice maker no sign up',
-    'free invoice template generator',
-    'business invoice creator',
-    'invoice generating tool',
-    'free online invoicing',
-    'make invoice online free'
-  ];
+  const targetLink = '/free-invoice-generator';
 
   return (
     <>
@@ -67,9 +31,9 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
         <title>🚀 Free Invoice Generator Online | Create Professional Invoices in 60 Seconds</title>
         <meta
           name="description"
-          content="✅ Generate professional invoices INSTANTLY with our 100% FREE online invoice generator. No registration required. Download as PDF. Trusted by 50,000+ businesses. Create invoices for freelancers, contractors, small businesses. Includes taxes, discounts, multi-currency."
+          content="✅ Generate professional invoices instantly with our free online invoice generator. No registration required. Download as PDF. Trusted by 50,000+ businesses."
         />
-        <meta name="keywords" content={[...primaryKeywords, ...secondaryKeywords].join(', ')} />
+        <meta name="keywords" content="free invoice generator, online invoice maker, create invoice free, professional invoice template, PDF invoice generator, small business invoicing, freelancer invoice tool" />
         
         {/* Advanced Meta Tags */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -81,13 +45,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
         <meta name="rating" content="safe for kids" />
         <meta name="distribution" content="global" />
         <meta name="category" content="Business, Finance, Invoicing" />
-        <meta name="theme-color" content="#2d6ae3" />
+        <meta name="theme-color" content="#10b981" />
         
         {/* Open Graph Protocol - Enhanced */}
         <meta property="og:title" content="🚀 Free Invoice Generator Online | Create & Download Professional Invoices in 60 Seconds" />
         <meta
           property="og:description"
-          content="✅ Generate professional invoices INSTANTLY. 100% FREE, no registration, secure, supports taxes, discounts, multi-currency. Download as PDF. Perfect for freelancers & small businesses."
+          content="✅ Generate professional invoices instantly. 100% FREE, no registration required. Download as PDF. Perfect for freelancers & small businesses."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
@@ -107,7 +71,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
         <meta name="twitter:title" content="🚀 Free Invoice Generator Online - No Signup Required" />
         <meta
           name="twitter:description"
-          content="Create clean, professional invoices in seconds. 100% FREE forever. No registration. Download as PDF instantly. #InvoiceGenerator #FreeTool"
+          content="Create clean, professional invoices in seconds. 100% FREE forever. No registration. Download as PDF instantly."
         />
         <meta name="twitter:image" content={imageUrl} />
         <meta name="twitter:image:alt" content="Free Invoice Generator Output Example" />
@@ -115,10 +79,6 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
         <meta name="twitter:data1" content="100% Free" />
         <meta name="twitter:label2" content="Registration" />
         <meta name="twitter:data2" content="Not Required" />
-        
-        {/* Facebook Meta Tags */}
-        <meta property="fb:app_id" content="YOUR_FB_APP_ID" />
-        <meta property="fb:pages" content="YOUR_FB_PAGE_ID" />
         
         {/* Additional SEO Meta */}
         <meta name="format-detection" content="telephone=no" />
@@ -314,7 +274,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         
-        {/* Additional Schema for Local Business (if applicable) */}
+        {/* Additional Schema for Local Business */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -348,10 +308,10 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
         <header className={styles.hero} role="banner" itemScope itemType="https://schema.org/WPHeader">
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle} itemProp="headline">
-              🚀 <span itemProp="name">Free Online Invoice Generator</span> - Create Professional Invoices in 60 Seconds
+              🚀 Free Online Invoice Generator - Create Professional Invoices in 60 Seconds
             </h1>
             <p className={styles.heroSubtitle} itemProp="description">
-              <strong>✅ 100% Free</strong> | <strong>✅ No Registration</strong> | <strong>✅ Unlimited Invoices</strong>
+              <strong>✅ 100% Free</strong> • <strong>✅ No Registration</strong> • <strong>✅ Unlimited Invoices</strong>
               <br />
               Create professional invoices instantly. Trusted by <strong>50,000+ freelancers</strong> and small businesses worldwide.
               <meta itemProp="datePublished" content="2020-01-01" />
@@ -359,7 +319,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
             </p>
             <div className={styles.heroButtons} role="group" aria-label="Primary Actions">
               <Link 
-                href="/free-invoice-generator" 
+                href={targetLink} 
                 className={`${styles.btn} ${styles.btnPrimary}`}
                 itemProp="mainEntityOfPage"
                 aria-label="Generate free invoice now - No registration required"
@@ -367,11 +327,11 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
                 ⚡ Generate Invoice Now - Free Forever
               </Link>
               <Link 
-                href="#features" 
+                href={targetLink} 
                 className={`${styles.btn} ${styles.btnSecondary}`}
-                aria-label="View all features of our invoice generator"
+                aria-label="Explore free invoice templates"
               >
-                📋 View All Features
+                📋 Explore Templates
               </Link>
             </div>
             <div className={styles.heroStats} itemScope itemType="https://schema.org/AggregateRating">
@@ -385,11 +345,11 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
                 <span>Free Forever</span>
               </div>
               <div className={styles.stat}>
-                <strong>0</strong>
-                <span>Registration Required</span>
+                <strong>4.9/5</strong>
+                <span>User Rating</span>
               </div>
-              <meta itemProp="bestRating" content="100" />
-              <meta itemProp="worstRating" content="0" />
+              <meta itemProp="bestRating" content="5" />
+              <meta itemProp="worstRating" content="1" />
             </div>
           </div>
         </header>
@@ -407,50 +367,47 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
               {
                 title: '⚡ Instant Invoicing',
                 description: 'Generate and download invoices instantly with a few clicks. No learning curve required.',
-                icon: '⚡',
-                schema: 'Speed'
+                icon: '⚡'
               },
               {
                 title: '📄 Professional PDF Export',
                 description: 'Export your invoices to professional PDF format for easy sharing and printing.',
-                icon: '📄',
-                schema: 'DigitalDocument'
+                icon: '📄'
               },
               {
                 title: '🔒 Secure & Private',
                 description: 'No data stored on our servers. Your client information stays completely private.',
-                icon: '🔒',
-                schema: 'Security'
+                icon: '🔒'
               },
               {
                 title: '🎨 Custom Branding',
                 description: 'Add your logo, company colors, and custom payment terms to match your brand.',
-                icon: '🎨',
-                schema: 'Brand'
+                icon: '🎨'
               },
-              {
-                title: '💰 Tax & Discounts',
-                description: 'Automatically calculate taxes, apply discounts, and handle multiple currency options.',
-                icon: '💰',
-                schema: 'PriceSpecification'
-              },
+              
               {
                 title: '📱 Mobile Friendly',
                 description: 'Create invoices on any device - desktop, tablet, or mobile phone.',
-                icon: '📱',
-                schema: 'MobileApplication'
+                icon: '📱'
               },
             ].map((card, index) => (
-              <div 
-                className={styles.card} 
+              <Link 
+                href={targetLink} 
+                className={styles.cardLink}
                 key={index}
-                itemScope 
-                itemType="https://schema.org/ProductFeature"
+                aria-label={`Learn more about ${card.title}`}
               >
-                <div className={styles.cardIcon} aria-hidden="true">{card.icon}</div>
-                <h3 className={styles.cardTitle} itemProp="name">{card.title}</h3>
-                <p className={styles.cardDescription} itemProp="description">{card.description}</p>
-              </div>
+                <div 
+                  className={styles.card} 
+                  itemScope 
+                  itemType="https://schema.org/ProductFeature"
+                >
+                  <div className={styles.cardIcon} aria-hidden="true">{card.icon}</div>
+                  <h3 className={styles.cardTitle} itemProp="name">{card.title}</h3>
+                  <p className={styles.cardDescription} itemProp="description">{card.description}</p>
+                  <span className={styles.cardCta}>Learn more →</span>
+                </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -468,19 +425,56 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
               <div className={styles.stepNumber} aria-hidden="true">1</div>
               <h3 itemProp="name">Enter Details</h3>
               <p itemProp="text">Fill in your business info, client details, and invoice items</p>
+              <Link href={targetLink} className={styles.stepLink}>Try it now →</Link>
               <meta itemProp="datePublished" content={currentDate} />
             </div>
             <div className={styles.step} itemProp="step" itemScope itemType="https://schema.org/HowToStep">
               <div className={styles.stepNumber} aria-hidden="true">2</div>
               <h3 itemProp="name">Customize</h3>
               <p itemProp="text">Add your logo, adjust colors, and set payment terms</p>
+              <Link href={targetLink} className={styles.stepLink}>Customize options →</Link>
               <meta itemProp="datePublished" content={currentDate} />
             </div>
             <div className={styles.step} itemProp="step" itemScope itemType="https://schema.org/HowToStep">
               <div className={styles.stepNumber} aria-hidden="true">3</div>
               <h3 itemProp="name">Download & Send</h3>
               <p itemProp="text">Download as PDF or share directly with your client</p>
+              <Link href={targetLink} className={styles.stepLink}>Download sample →</Link>
               <meta itemProp="datePublished" content={currentDate} />
+            </div>
+          </div>
+        </section>
+
+        {/* Interactive Demo Section */}
+        <section className={styles.demoSection} role="region" aria-labelledby="demo-heading">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle} id="demo-heading">🎯 Try Our Interactive Demo</h2>
+            <p className={styles.sectionSubtitle}>
+              See how easy it is to create professional invoices in real-time
+            </p>
+          </div>
+          <div className={styles.demoContainer}>
+            <div className={styles.demoPreview}>
+              <div className={styles.invoicePreview}>
+                <div className={styles.invoiceHeader}>
+                  <h3>Sample Invoice Preview</h3>
+                  <p>Your professional invoice will look like this</p>
+                </div>
+                <div className={styles.invoiceDetails}>
+                  <p><strong>Invoice #:</strong> INV-20587-001</p>
+                  <p><strong>Date:</strong> {currentDate}</p>
+                  <p><strong>Client:</strong> Sample Client Inc.</p>
+                  <p><strong>Amount:</strong> $1,250.00</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.demoActions}>
+              <Link href={targetLink} className={`${styles.btn} ${styles.btnPrimary}`}>
+                Try It Now
+              </Link>
+              <Link href={targetLink} className={`${styles.btn} ${styles.btnSecondary}`}>
+                Customize Options
+              </Link>
             </div>
           </div>
         </section>
@@ -496,21 +490,21 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
           <div className={styles.testimonialCards}>
             {[
               {
-                content: '"This tool saved me so much time! I can create clean, professional invoices within minutes. The PDF export feature is flawless."',
+                content: 'This tool saved me so much time! I can create clean, professional invoices within minutes. The PDF export feature is flawless.',
                 author: 'Sarah M.',
                 role: 'Freelance Designer',
                 rating: '5',
                 date: currentDate
               },
               {
-                content: '"Finally, a free invoice generator that works like a charm. No ads, no hassle, and my clients love the professional look."',
+                content: 'Finally, a free invoice generator that works like a charm. No ads, no hassle, and my clients love the professional look.',
                 author: 'John T.',
                 role: 'Small Business Owner',
                 rating: '5',
                 date: currentDate
               },
               {
-                content: '"As a contractor, I need to send invoices quickly. This tool has everything I need and the mobile experience is perfect."',
+                content: 'As a contractor, I need to send invoices quickly. This tool has everything I need and the mobile experience is perfect.',
                 author: 'Mike R.',
                 role: 'IT Contractor',
                 rating: '5',
@@ -524,6 +518,9 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
                 itemType="https://schema.org/Review"
               >
                 <div className={styles.testimonialContent}>
+                  <div className={styles.rating} aria-label={`${testimonial.rating} out of 5 stars`}>
+                    {'★'.repeat(5)}
+                  </div>
                   <p itemProp="reviewBody">{testimonial.content}</p>
                   <div 
                     className={styles.testimonialAuthor}
@@ -554,31 +551,66 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
         <section className={styles.faq} role="region" aria-labelledby="faq-heading">
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle} id="faq-heading">❓ Frequently Asked Questions</h2>
+            <p className={styles.sectionSubtitle}>
+              Get answers to common questions about our invoice generator
+            </p>
           </div>
           <div className={styles.faqList}>
             {[
               {
                 question: 'Is it really free?',
-                answer: 'Yes, completely free! No hidden fees, no trial periods, and no registration required. You can create and download unlimited invoices at no cost.'
+                answer: `Yes, completely free! No hidden fees, no trial periods, and no registration required. You can create and download unlimited invoices at no cost. <a href="${targetLink}" style="color: #10b981; font-weight: 600;">Try it now →</a>`
               },
               {
                 question: 'Do I need to create an account?',
-                answer: 'No account creation needed. Our invoice generator works instantly without any sign-up process.'
+                answer: `No account creation needed. Our invoice generator works instantly without any sign-up process. <a href="${targetLink}" style="color: #10b981; font-weight: 600;">Start creating invoices now →</a>`
               },
               {
                 question: 'What information do I need to create an invoice?',
-                answer: 'You need your business details, client information, invoice items with descriptions and prices, and any applicable taxes or discounts.'
+                answer: `You need your business details, client information, invoice items with descriptions and prices, and any applicable taxes or discounts. <a href="${targetLink}" style="color: #10b981; font-weight: 600;">See sample invoice →</a>`
               },
               {
                 question: 'Can I customize the invoice design?',
-                answer: 'Yes! You can add your logo, change colors, modify layouts, and include custom payment terms to match your brand.'
+                answer: `Yes! You can add your logo, change colors, modify layouts, and include custom payment terms to match your brand. <a href="${targetLink}" style="color: #10b981; font-weight: 600;">Customize your invoice →</a>`
               }
             ].map((faq, index) => (
               <div className={styles.faqItem} key={index}>
                 <h3>{faq.question}</h3>
-                <p>{faq.answer}</p>
+                <p dangerouslySetInnerHTML={{ __html: faq.answer }} />
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Tools & Resources Section */}
+        <section className={styles.resources} role="region" aria-labelledby="resources-heading">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle} id="resources-heading">🔧 More Free Business Tools</h2>
+            <p className={styles.sectionSubtitle}>
+              Explore our complete suite of free business tools
+            </p>
+          </div>
+          <div className={styles.resourceGrid}>
+            <Link href={targetLink} className={styles.resourceCard}>
+              <div className={styles.resourceIcon}>🧾</div>
+              <h3>Receipt Maker</h3>
+              <p>Create professional receipts instantly</p>
+            </Link>
+            <Link href={targetLink} className={styles.resourceCard}>
+              <div className={styles.resourceIcon}>📊</div>
+              <h3>Estimate Generator</h3>
+              <p>Generate accurate project estimates</p>
+            </Link>
+            <Link href={targetLink} className={styles.resourceCard}>
+              <div className={styles.resourceIcon}>📑</div>
+              <h3>Invoice Templates</h3>
+              <p>50+ free customizable templates</p>
+            </Link>
+            <Link href={targetLink} className={styles.resourceCard}>
+              <div className={styles.resourceIcon}>🧮</div>
+              <h3>Business Calculators</h3>
+              <p>Financial calculators for businesses</p>
+            </Link>
           </div>
         </section>
 
@@ -592,18 +624,18 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
             </p>
             <div className={styles.ctaButtons} role="group" aria-label="Final Call to Action">
               <Link 
-                href="/free-invoice-generator" 
+                href={targetLink} 
                 className={`${styles.btn} ${styles.btnPrimary} ${styles.btnLarge}`}
                 aria-label="Generate your first free invoice now - No signup needed"
               >
                 ⚡ Generate Your First Invoice - FREE
               </Link>
               <Link 
-                href="#features" 
+                href={targetLink} 
                 className={`${styles.btn} ${styles.btnSecondary} ${styles.btnLarge}`}
                 aria-label="Explore all features of our invoice generator"
               >
-                📊 View All Features
+                📊 Explore All Features
               </Link>
             </div>
             <p className={styles.ctaNote}>
@@ -611,45 +643,24 @@ const InvoiceLP = ({ currentDate, lastModifiedDate }) => {
             </p>
           </div>
         </section>
-
-        {/* Hidden SEO Content for Additional Keywords (Accessible but not visible) */}
-        <div className={styles.seoContent} aria-hidden="true">
-          <h2>Free Invoice Generator Features</h2>
-          <p>Our free online invoice generator helps freelancers, contractors, and small businesses create professional invoices instantly. 
-          Key features include instant PDF generation, tax calculations, discount support, multi-currency options, and custom branding. 
-          Perfect for creating invoices for clients, managing billing, and improving cash flow.</p>
-          
-          <h3>Related Search Terms</h3>
-          <ul>
-            <li>free invoice maker online</li>
-            <li>create invoice pdf free</li>
-            <li>professional invoice template free</li>
-            <li>online billing software free</li>
-            <li>invoice generator for small business</li>
-            <li>freelance invoice creator</li>
-            <li>instant invoice maker</li>
-            <li>digital invoice generator</li>
-            <li>free invoice software</li>
-            <li>quick invoice creator</li>
-          </ul>
-        </div>
       </div>
     </>
   );
 };
 
 export async function getStaticProps() {
-  // Generate dates at build time
-  const now = new Date();
-  const currentDate = now.toISOString().split('T')[0]; // Format: YYYY-MM-DD
-  const lastModifiedDate = now.toISOString(); // Full ISO string
+  // Generate dates at build time for SSG
+  const buildTime = new Date();
+  const currentDate = buildTime.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+  const lastModifiedDate = buildTime.toISOString(); // Full ISO string
 
   return {
     props: {
       currentDate,
       lastModifiedDate,
     },
-    revalidate: 86400, // Incremental Static Regeneration: Re-generate page every 24 hours
+    // Incremental Static Regeneration: Re-generate page every 24 hours
+    revalidate: 86400,
   };
 }
 

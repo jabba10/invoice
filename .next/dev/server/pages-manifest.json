@@ -5,6 +5,5 @@
   "/_document": "pages/_document.js",
   "/aboutus": "pages/aboutus.js",
   "/contact-us": "pages/contact-us.js",
-  "/free-invoice-generator": "pages/free-invoice-generator.js",
-  "/privacy-policy": "pages/privacy-policy.js"
+  "/free-invoice-generator": "pages/free-invoice-generator.js"
 }

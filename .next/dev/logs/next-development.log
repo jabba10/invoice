@@ -1,22 +1,20 @@
-[00:00:03.467] Server  LOG     ✓ Ready in 2.5s
-[00:00:03.471] Server  WARN    ⚠ Cross origin request detected from 192.168.19.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:04.272] Server  ERROR   Invalid DOM property `hreflang`. Did you mean `hrefLang`?
-[00:01:48.959] Server  LOG     ✓ Compiled in 422ms
-[00:01:48.966] Browser LOG     Refreshing page data due to server-side change
-[00:11:47.835] Server  LOG     ✓ Compiled in 49ms
-[00:13:30.000] Server  LOG     ✓ Compiled in 109ms
-[00:49:01.295] Server  LOG     ✓ Compiled in 84ms
-[00:50:01.318] Server  LOG     ✓ Compiled in 136ms
-[01:11:48.095] Server  LOG     ✓ Compiled in 126ms
-[01:12:08.772] Server  LOG     ✓ Compiled in 171ms
-[03:21:53.220] Browser LOG     Refreshing page data due to server-side change
-[03:21:53.232] Server  LOG     ✓ Compiled in 96ms
-[03:25:43.856] Server  LOG     ✓ Compiled in 16ms
-[03:27:38.561] Server  ERROR   PageNotFoundError: Cannot find module for page: /terms-of-service
-[03:29:12.347] Server  LOG     ✓ Compiled in 109ms
-[03:29:23.481] Server  LOG     ✓ Compiled in 102ms
-[03:29:36.674] Server  LOG     ✓ Compiled in 336ms
-[03:35:20.638] Server  LOG     ✓ Compiled in 43ms
-[03:42:45.222] Browser LOG     Refreshing page data due to server-side change
-[03:46:28.446] Server  LOG     ✓ Compiled in 41ms
+[00:00:03.529] Server  LOG     ✓ Ready in 2.4s
+[00:01:04.880] Server  ERROR   Invalid DOM property `hreflang`. Did you mean `hrefLang`?
+[00:01:32.282] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:14:01.859] Server  LOG     ✓ Compiled in 65ms
+[00:34:59.670] Server  LOG     ✓ Compiled in 16ms
+[00:36:02.030] Server  LOG     ✓ Compiled in 52ms
+[00:36:33.836] Server  ERROR   PageNotFoundError: Cannot find module for page: /live-demo
+[00:36:41.410] Server  ERROR   PageNotFoundError: Cannot find module for page: /invoice-templates
+[00:37:10.099] Server  LOG     ✓ Compiled in 51ms
+[00:37:45.859] Server  ERROR   PageNotFoundError: Cannot find module for page: /download
+[00:37:57.336] Server  ERROR   PageNotFoundError: Cannot find module for page: /tax-calculator
+[01:15:19.702] Server  LOG     ✓ Compiled in 133ms
+[01:15:31.925] Server  ERROR   PageNotFoundError: Cannot find module for page: /create-free-username-and-password-with-accessvaulted-generator
+[01:24:05.894] Server  LOG     ✓ Compiled in 125ms
+[01:24:16.784] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:39:48.125] Server  LOG     ✓ Compiled in 114ms
+[01:40:06.128] Server  LOG     ✓ Compiled in 157ms
+[01:41:20.474] Server  LOG     ✓ Compiled in 152ms
+[01:42:56.061] Server  LOG     ✓ Compiled in 153ms
+[01:45:37.257] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

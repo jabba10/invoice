@@ -470,8 +470,10 @@ __turbopack_context__.v({
   "btnPrimary": "InvoiceLP-module__pHAR_W__btnPrimary",
   "btnSecondary": "InvoiceLP-module__pHAR_W__btnSecondary",
   "card": "InvoiceLP-module__pHAR_W__card",
+  "cardCta": "InvoiceLP-module__pHAR_W__cardCta",
   "cardDescription": "InvoiceLP-module__pHAR_W__cardDescription",
   "cardIcon": "InvoiceLP-module__pHAR_W__cardIcon",
+  "cardLink": "InvoiceLP-module__pHAR_W__cardLink",
   "cardTitle": "InvoiceLP-module__pHAR_W__cardTitle",
   "cards": "InvoiceLP-module__pHAR_W__cards",
   "container": "InvoiceLP-module__pHAR_W__container",
@@ -481,6 +483,10 @@ __turbopack_context__.v({
   "ctaNote": "InvoiceLP-module__pHAR_W__ctaNote",
   "ctaSection": "InvoiceLP-module__pHAR_W__ctaSection",
   "ctaTitle": "InvoiceLP-module__pHAR_W__ctaTitle",
+  "demoActions": "InvoiceLP-module__pHAR_W__demoActions",
+  "demoContainer": "InvoiceLP-module__pHAR_W__demoContainer",
+  "demoPreview": "InvoiceLP-module__pHAR_W__demoPreview",
+  "demoSection": "InvoiceLP-module__pHAR_W__demoSection",
   "faq": "InvoiceLP-module__pHAR_W__faq",
   "faqItem": "InvoiceLP-module__pHAR_W__faqItem",
   "faqList": "InvoiceLP-module__pHAR_W__faqList",
@@ -492,13 +498,21 @@ __turbopack_context__.v({
   "heroSubtitle": "InvoiceLP-module__pHAR_W__heroSubtitle",
   "heroTitle": "InvoiceLP-module__pHAR_W__heroTitle",
   "howItWorks": "InvoiceLP-module__pHAR_W__howItWorks",
+  "invoiceDetails": "InvoiceLP-module__pHAR_W__invoiceDetails",
+  "invoiceHeader": "InvoiceLP-module__pHAR_W__invoiceHeader",
+  "invoicePreview": "InvoiceLP-module__pHAR_W__invoicePreview",
+  "rating": "InvoiceLP-module__pHAR_W__rating",
+  "resourceCard": "InvoiceLP-module__pHAR_W__resourceCard",
+  "resourceGrid": "InvoiceLP-module__pHAR_W__resourceGrid",
+  "resourceIcon": "InvoiceLP-module__pHAR_W__resourceIcon",
+  "resources": "InvoiceLP-module__pHAR_W__resources",
   "sectionHeader": "InvoiceLP-module__pHAR_W__sectionHeader",
   "sectionSubtitle": "InvoiceLP-module__pHAR_W__sectionSubtitle",
   "sectionTitle": "InvoiceLP-module__pHAR_W__sectionTitle",
-  "seoContent": "InvoiceLP-module__pHAR_W__seoContent",
   "sr-only": "InvoiceLP-module__pHAR_W__sr-only",
   "stat": "InvoiceLP-module__pHAR_W__stat",
   "step": "InvoiceLP-module__pHAR_W__step",
+  "stepLink": "InvoiceLP-module__pHAR_W__stepLink",
   "stepNumber": "InvoiceLP-module__pHAR_W__stepNumber",
   "steps": "InvoiceLP-module__pHAR_W__steps",
   "testimonial": "InvoiceLP-module__pHAR_W__testimonial",
@@ -529,41 +543,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
     const siteUrl = 'https://www.nofeesinvoice.com/free-invoice-generator';
     const imageUrl = 'https://www.nofeesinvoice.com/images/invoice-preview.jpg';
     const logoUrl = 'https://www.nofeesinvoice.com/images/logo.png';
-    // Comprehensive keyword list for invoice generator
-    const primaryKeywords = [
-        'free invoice generator',
-        'online invoice maker',
-        'create invoice free',
-        'professional invoice template',
-        'PDF invoice generator',
-        'small business invoicing',
-        'freelancer invoice tool',
-        'instant invoice creator',
-        'business invoice software',
-        'invoice generator online',
-        'free billing software',
-        'invoice creator tool',
-        'digital invoice maker',
-        'quick invoice generator',
-        'invoice template PDF'
-    ];
-    const secondaryKeywords = [
-        'no registration invoice tool',
-        'free invoice maker for small business',
-        'online invoice creator free',
-        'generate invoice PDF',
-        'custom invoice generator',
-        'invoice software free',
-        'create professional invoices',
-        'invoice generator 2024',
-        'best free invoice generator',
-        'invoice maker no sign up',
-        'free invoice template generator',
-        'business invoice creator',
-        'invoice generating tool',
-        'free online invoicing',
-        'make invoice online free'
-    ];
+    const targetLink = '/free-invoice-generator';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$head$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -572,14 +552,14 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         lang: "en"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 51,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         charSet: "utf-8"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 52,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -587,7 +567,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "width=device-width, initial-scale=1, maximum-scale=5"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 53,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -595,7 +575,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "text/html; charset=utf-8"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 54,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -603,7 +583,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "IE=edge"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 55,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -611,7 +591,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: currentDate
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 58,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -619,7 +599,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: lastModifiedDate
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 59,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -627,7 +607,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         href: siteUrl
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 62,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -636,7 +616,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         hreflang: "x-default"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 63,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -645,33 +625,30 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         hreflang: "en"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 64,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("title", {
                         children: "🚀 Free Invoice Generator Online | Create Professional Invoices in 60 Seconds"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 67,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "description",
-                        content: "✅ Generate professional invoices INSTANTLY with our 100% FREE online invoice generator. No registration required. Download as PDF. Trusted by 50,000+ businesses. Create invoices for freelancers, contractors, small businesses. Includes taxes, discounts, multi-currency."
+                        content: "✅ Generate professional invoices instantly with our free online invoice generator. No registration required. Download as PDF. Trusted by 50,000+ businesses."
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 68,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "keywords",
-                        content: [
-                            ...primaryKeywords,
-                            ...secondaryKeywords
-                        ].join(', ')
+                        content: "free invoice generator, online invoice maker, create invoice free, professional invoice template, PDF invoice generator, small business invoicing, freelancer invoice tool"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 72,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -679,7 +656,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 75,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -687,7 +664,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 76,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -695,7 +672,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 77,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -703,7 +680,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "NoFeesInvoice - Free Business Tools"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 78,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -711,7 +688,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "NoFeesInvoice"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 79,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -719,7 +696,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: `NoFeesInvoice ${new Date().getFullYear()}`
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 80,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -727,7 +704,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "safe for kids"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 81,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -735,7 +712,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "global"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 82,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -743,15 +720,15 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "Business, Finance, Invoicing"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 83,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "theme-color",
-                        content: "#2d6ae3"
+                        content: "#10b981"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 84,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -759,15 +736,15 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "🚀 Free Invoice Generator Online | Create & Download Professional Invoices in 60 Seconds"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 87,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:description",
-                        content: "✅ Generate professional invoices INSTANTLY. 100% FREE, no registration, secure, supports taxes, discounts, multi-currency. Download as PDF. Perfect for freelancers & small businesses."
+                        content: "✅ Generate professional invoices instantly. 100% FREE, no registration required. Download as PDF. Perfect for freelancers & small businesses."
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 88,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -775,7 +752,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "website"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 92,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -783,7 +760,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: siteUrl
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 93,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -791,7 +768,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: imageUrl
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 94,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -799,7 +776,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "Professional Invoice Sample - NoFeesInvoice Free Invoice Generator"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 95,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -807,7 +784,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "NoFeesInvoice"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 96,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -815,7 +792,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "en_US"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 97,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -823,7 +800,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: lastModifiedDate
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 98,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -831,7 +808,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "1200"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 99,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -839,7 +816,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "630"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 100,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -847,7 +824,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "image/jpeg"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 101,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -855,7 +832,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 104,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -863,7 +840,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "@nofeesinvoice"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 105,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -871,7 +848,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "@nofeesinvoice"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 106,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -879,15 +856,15 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "🚀 Free Invoice Generator Online - No Signup Required"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 107,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:description",
-                        content: "Create clean, professional invoices in seconds. 100% FREE forever. No registration. Download as PDF instantly. #InvoiceGenerator #FreeTool"
+                        content: "Create clean, professional invoices in seconds. 100% FREE forever. No registration. Download as PDF instantly."
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 108,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -895,7 +872,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: imageUrl
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 112,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -903,7 +880,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "Free Invoice Generator Output Example"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 113,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -911,7 +888,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "Price"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 114,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -919,7 +896,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "100% Free"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 115,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -927,7 +904,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "Registration"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 116,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -935,23 +912,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "Not Required"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 117,
-                        columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "fb:app_id",
-                        content: "YOUR_FB_APP_ID"
-                    }, void 0, false, {
-                        fileName: "[project]/src/pages/index.js",
-                        lineNumber: 120,
-                        columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "fb:pages",
-                        content: "YOUR_FB_PAGE_ID"
-                    }, void 0, false, {
-                        fileName: "[project]/src/pages/index.js",
-                        lineNumber: 121,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -959,7 +920,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "telephone=no"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 124,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -967,7 +928,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "yes"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 125,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -975,7 +936,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "black-translucent"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 126,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -983,7 +944,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "true"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 129,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -991,7 +952,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "width"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 130,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -999,7 +960,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         content: "Invoice Generator"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 131,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -1175,7 +1136,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 134,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -1184,7 +1145,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         as: "image"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 308,
+                        lineNumber: 268,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -1193,7 +1154,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         as: "style"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 309,
+                        lineNumber: 269,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -1201,7 +1162,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         href: "/favicon.ico"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 312,
+                        lineNumber: 272,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -1210,7 +1171,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         type: "image/svg+xml"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 313,
+                        lineNumber: 273,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -1218,7 +1179,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         href: "/apple-touch-icon.png"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 314,
+                        lineNumber: 274,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -1226,7 +1187,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         href: "/manifest.json"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 315,
+                        lineNumber: 275,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -1257,13 +1218,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 318,
+                        lineNumber: 278,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/pages/index.js",
-                lineNumber: 49,
+                lineNumber: 13,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1282,21 +1243,10 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].heroTitle,
                                     itemProp: "headline",
-                                    children: [
-                                        "🚀 ",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            itemProp: "name",
-                                            children: "Free Online Invoice Generator"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 351,
-                                            columnNumber: 18
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        " - Create Professional Invoices in 60 Seconds"
-                                    ]
-                                }, void 0, true, {
+                                    children: "🚀 Free Online Invoice Generator - Create Professional Invoices in 60 Seconds"
+                                }, void 0, false, {
                                     fileName: "[project]/src/pages/index.js",
-                                    lineNumber: 350,
+                                    lineNumber: 310,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1307,28 +1257,28 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                             children: "✅ 100% Free"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 354,
+                                            lineNumber: 314,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
-                                        " | ",
+                                        " • ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                             children: "✅ No Registration"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 354,
+                                            lineNumber: 314,
                                             columnNumber: 46
                                         }, ("TURBOPACK compile-time value", void 0)),
-                                        " | ",
+                                        " • ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                             children: "✅ Unlimited Invoices"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 354,
+                                            lineNumber: 314,
                                             columnNumber: 83
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 355,
+                                            lineNumber: 315,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         "Create professional invoices instantly. Trusted by ",
@@ -1336,7 +1286,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                             children: "50,000+ freelancers"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 356,
+                                            lineNumber: 316,
                                             columnNumber: 66
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         " and small businesses worldwide.",
@@ -1345,7 +1295,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                             content: "2020-01-01"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 357,
+                                            lineNumber: 317,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1353,13 +1303,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                             content: currentDate
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 358,
+                                            lineNumber: 318,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/index.js",
-                                    lineNumber: 353,
+                                    lineNumber: 313,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1368,30 +1318,30 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                     "aria-label": "Primary Actions",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/free-invoice-generator",
+                                            href: targetLink,
                                             className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btn} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btnPrimary}`,
                                             itemProp: "mainEntityOfPage",
                                             "aria-label": "Generate free invoice now - No registration required",
                                             children: "⚡ Generate Invoice Now - Free Forever"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 361,
+                                            lineNumber: 321,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "#features",
+                                            href: targetLink,
                                             className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btn} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btnSecondary}`,
-                                            "aria-label": "View all features of our invoice generator",
-                                            children: "📋 View All Features"
+                                            "aria-label": "Explore free invoice templates",
+                                            children: "📋 Explore Templates"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 369,
+                                            lineNumber: 329,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/index.js",
-                                    lineNumber: 360,
+                                    lineNumber: 320,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1407,14 +1357,14 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                     children: "50,000+"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 379,
+                                                    lineNumber: 339,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Invoices Created"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 380,
+                                                    lineNumber: 340,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1422,13 +1372,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                     content: "50000"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 381,
+                                                    lineNumber: 341,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 378,
+                                            lineNumber: 338,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1438,76 +1388,76 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                     children: "100%"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 384,
+                                                    lineNumber: 344,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Free Forever"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 385,
+                                                    lineNumber: 345,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 383,
+                                            lineNumber: 343,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].stat,
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                    children: "0"
+                                                    children: "4.9/5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 388,
+                                                    lineNumber: 348,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "Registration Required"
+                                                    children: "User Rating"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 389,
+                                                    lineNumber: 349,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 387,
+                                            lineNumber: 347,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                                             itemProp: "bestRating",
-                                            content: "100"
+                                            content: "5"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 391,
+                                            lineNumber: 351,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                                             itemProp: "worstRating",
-                                            content: "0"
+                                            content: "1"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 392,
+                                            lineNumber: 352,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/index.js",
-                                    lineNumber: 377,
+                                    lineNumber: 337,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/pages/index.js",
-                            lineNumber: 349,
+                            lineNumber: 309,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 348,
+                        lineNumber: 308,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1525,7 +1475,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                         children: "✨ Why Choose Our Invoice Generator?"
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 400,
+                                        lineNumber: 360,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1533,13 +1483,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                         children: "Everything you need to create professional invoices quickly and efficiently"
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 401,
+                                        lineNumber: 361,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/pages/index.js",
-                                lineNumber: 399,
+                                lineNumber: 359,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1548,86 +1498,92 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                     {
                                         title: '⚡ Instant Invoicing',
                                         description: 'Generate and download invoices instantly with a few clicks. No learning curve required.',
-                                        icon: '⚡',
-                                        schema: 'Speed'
+                                        icon: '⚡'
                                     },
                                     {
                                         title: '📄 Professional PDF Export',
                                         description: 'Export your invoices to professional PDF format for easy sharing and printing.',
-                                        icon: '📄',
-                                        schema: 'DigitalDocument'
+                                        icon: '📄'
                                     },
                                     {
                                         title: '🔒 Secure & Private',
                                         description: 'No data stored on our servers. Your client information stays completely private.',
-                                        icon: '🔒',
-                                        schema: 'Security'
+                                        icon: '🔒'
                                     },
                                     {
                                         title: '🎨 Custom Branding',
                                         description: 'Add your logo, company colors, and custom payment terms to match your brand.',
-                                        icon: '🎨',
-                                        schema: 'Brand'
-                                    },
-                                    {
-                                        title: '💰 Tax & Discounts',
-                                        description: 'Automatically calculate taxes, apply discounts, and handle multiple currency options.',
-                                        icon: '💰',
-                                        schema: 'PriceSpecification'
+                                        icon: '🎨'
                                     },
                                     {
                                         title: '📱 Mobile Friendly',
                                         description: 'Create invoices on any device - desktop, tablet, or mobile phone.',
-                                        icon: '📱',
-                                        schema: 'MobileApplication'
+                                        icon: '📱'
                                     }
-                                ].map((card, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].card,
-                                        itemScope: true,
-                                        itemType: "https://schema.org/ProductFeature",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardIcon,
-                                                "aria-hidden": "true",
-                                                children: card.icon
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 450,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardTitle,
-                                                itemProp: "name",
-                                                children: card.title
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 451,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardDescription,
-                                                itemProp: "description",
-                                                children: card.description
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 452,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        ]
-                                    }, index, true, {
+                                ].map((card, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: targetLink,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardLink,
+                                        "aria-label": `Learn more about ${card.title}`,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].card,
+                                            itemScope: true,
+                                            itemType: "https://schema.org/ProductFeature",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardIcon,
+                                                    "aria-hidden": "true",
+                                                    children: card.icon
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/pages/index.js",
+                                                    lineNumber: 405,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardTitle,
+                                                    itemProp: "name",
+                                                    children: card.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/pages/index.js",
+                                                    lineNumber: 406,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardDescription,
+                                                    itemProp: "description",
+                                                    children: card.description
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/pages/index.js",
+                                                    lineNumber: 407,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].cardCta,
+                                                    children: "Learn more →"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/pages/index.js",
+                                                    lineNumber: 408,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/pages/index.js",
+                                            lineNumber: 400,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, index, false, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 444,
+                                        lineNumber: 394,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/src/pages/index.js",
-                                lineNumber: 405,
+                                lineNumber: 365,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 398,
+                        lineNumber: 358,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1644,7 +1600,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                         children: "📝 How It Works"
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 461,
+                                        lineNumber: 418,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1652,13 +1608,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                         children: "Create your first professional invoice in under 2 minutes"
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 462,
+                                        lineNumber: 419,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/pages/index.js",
-                                lineNumber: 460,
+                                lineNumber: 417,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1678,7 +1634,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 children: "1"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 468,
+                                                lineNumber: 425,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1686,7 +1642,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 children: "Enter Details"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 469,
+                                                lineNumber: 426,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1694,7 +1650,16 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 children: "Fill in your business info, client details, and invoice items"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 470,
+                                                lineNumber: 427,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: targetLink,
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].stepLink,
+                                                children: "Try it now →"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 428,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1702,13 +1667,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 content: currentDate
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 471,
+                                                lineNumber: 429,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 467,
+                                        lineNumber: 424,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1723,7 +1688,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 children: "2"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 474,
+                                                lineNumber: 432,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1731,7 +1696,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 children: "Customize"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 475,
+                                                lineNumber: 433,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1739,7 +1704,16 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 children: "Add your logo, adjust colors, and set payment terms"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 476,
+                                                lineNumber: 434,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: targetLink,
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].stepLink,
+                                                children: "Customize options →"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 435,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1747,13 +1721,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 content: currentDate
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 477,
+                                                lineNumber: 436,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 473,
+                                        lineNumber: 431,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1768,7 +1742,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 children: "3"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 480,
+                                                lineNumber: 439,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1776,7 +1750,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 children: "Download & Send"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 481,
+                                                lineNumber: 440,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1784,7 +1758,16 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 children: "Download as PDF or share directly with your client"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 482,
+                                                lineNumber: 441,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: targetLink,
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].stepLink,
+                                                children: "Download sample →"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 442,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1792,25 +1775,211 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 content: currentDate
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
-                                                lineNumber: 483,
+                                                lineNumber: 443,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 479,
+                                        lineNumber: 438,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/pages/index.js",
-                                lineNumber: 466,
+                                lineNumber: 423,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 459,
+                        lineNumber: 416,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].demoSection,
+                        role: "region",
+                        "aria-labelledby": "demo-heading",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionHeader,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionTitle,
+                                        id: "demo-heading",
+                                        children: "🎯 Try Our Interactive Demo"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 451,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionSubtitle,
+                                        children: "See how easy it is to create professional invoices in real-time"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 452,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/pages/index.js",
+                                lineNumber: 450,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].demoContainer,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].demoPreview,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].invoicePreview,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].invoiceHeader,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                            children: "Sample Invoice Preview"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/pages/index.js",
+                                                            lineNumber: 460,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            children: "Your professional invoice will look like this"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/pages/index.js",
+                                                            lineNumber: 461,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/pages/index.js",
+                                                    lineNumber: 459,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].invoiceDetails,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                    children: "Invoice #:"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/pages/index.js",
+                                                                    lineNumber: 464,
+                                                                    columnNumber: 22
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                " INV-20587-001"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/pages/index.js",
+                                                            lineNumber: 464,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                    children: "Date:"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/pages/index.js",
+                                                                    lineNumber: 465,
+                                                                    columnNumber: 22
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                " ",
+                                                                currentDate
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/pages/index.js",
+                                                            lineNumber: 465,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                    children: "Client:"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/pages/index.js",
+                                                                    lineNumber: 466,
+                                                                    columnNumber: 22
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                " Sample Client Inc."
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/pages/index.js",
+                                                            lineNumber: 466,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                    children: "Amount:"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/pages/index.js",
+                                                                    lineNumber: 467,
+                                                                    columnNumber: 22
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                " $1,250.00"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/pages/index.js",
+                                                            lineNumber: 467,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/pages/index.js",
+                                                    lineNumber: 463,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/pages/index.js",
+                                            lineNumber: 458,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 457,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].demoActions,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: targetLink,
+                                                className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btn} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btnPrimary}`,
+                                                children: "Try It Now"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 472,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: targetLink,
+                                                className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btn} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btnSecondary}`,
+                                                children: "Customize Options"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 475,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 471,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/pages/index.js",
+                                lineNumber: 456,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/pages/index.js",
+                        lineNumber: 449,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1827,7 +1996,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                         children: "⭐ What Our Users Say"
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 491,
+                                        lineNumber: 485,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1835,34 +2004,34 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                         children: "Join thousands of satisfied users who trust our invoice generator"
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 492,
+                                        lineNumber: 486,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/pages/index.js",
-                                lineNumber: 490,
+                                lineNumber: 484,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].testimonialCards,
                                 children: [
                                     {
-                                        content: '"This tool saved me so much time! I can create clean, professional invoices within minutes. The PDF export feature is flawless."',
+                                        content: 'This tool saved me so much time! I can create clean, professional invoices within minutes. The PDF export feature is flawless.',
                                         author: 'Sarah M.',
                                         role: 'Freelance Designer',
                                         rating: '5',
                                         date: currentDate
                                     },
                                     {
-                                        content: '"Finally, a free invoice generator that works like a charm. No ads, no hassle, and my clients love the professional look."',
+                                        content: 'Finally, a free invoice generator that works like a charm. No ads, no hassle, and my clients love the professional look.',
                                         author: 'John T.',
                                         role: 'Small Business Owner',
                                         rating: '5',
                                         date: currentDate
                                     },
                                     {
-                                        content: '"As a contractor, I need to send invoices quickly. This tool has everything I need and the mobile experience is perfect."',
+                                        content: 'As a contractor, I need to send invoices quickly. This tool has everything I need and the mobile experience is perfect.',
                                         author: 'Mike R.',
                                         role: 'IT Contractor',
                                         rating: '5',
@@ -1875,12 +2044,21 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].testimonialContent,
                                             children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].rating,
+                                                    "aria-label": `${testimonial.rating} out of 5 stars`,
+                                                    children: '★'.repeat(5)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/pages/index.js",
+                                                    lineNumber: 521,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     itemProp: "reviewBody",
                                                     children: testimonial.content
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 527,
+                                                    lineNumber: 524,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1894,7 +2072,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                             children: testimonial.author
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/pages/index.js",
-                                                            lineNumber: 534,
+                                                            lineNumber: 531,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1902,13 +2080,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                             children: testimonial.role
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/pages/index.js",
-                                                            lineNumber: 535,
+                                                            lineNumber: 532,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 528,
+                                                    lineNumber: 525,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1916,7 +2094,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                     content: testimonial.date
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 537,
+                                                    lineNumber: 534,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1932,7 +2110,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                             content: testimonial.rating
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/pages/index.js",
-                                                            lineNumber: 544,
+                                                            lineNumber: 541,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1940,35 +2118,35 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                             content: "5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/pages/index.js",
-                                                            lineNumber: 545,
+                                                            lineNumber: 542,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/pages/index.js",
-                                                    lineNumber: 538,
+                                                    lineNumber: 535,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 526,
+                                            lineNumber: 520,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, index, false, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 520,
+                                        lineNumber: 514,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/src/pages/index.js",
-                                lineNumber: 496,
+                                lineNumber: 490,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 489,
+                        lineNumber: 483,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1978,18 +2156,28 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionHeader,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionTitle,
-                                    id: "faq-heading",
-                                    children: "❓ Frequently Asked Questions"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/pages/index.js",
-                                    lineNumber: 556,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0))
-                            }, void 0, false, {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionTitle,
+                                        id: "faq-heading",
+                                        children: "❓ Frequently Asked Questions"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 553,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionSubtitle,
+                                        children: "Get answers to common questions about our invoice generator"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 554,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/pages/index.js",
-                                lineNumber: 555,
+                                lineNumber: 552,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1997,19 +2185,19 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                 children: [
                                     {
                                         question: 'Is it really free?',
-                                        answer: 'Yes, completely free! No hidden fees, no trial periods, and no registration required. You can create and download unlimited invoices at no cost.'
+                                        answer: `Yes, completely free! No hidden fees, no trial periods, and no registration required. You can create and download unlimited invoices at no cost. <a href="${targetLink}" style="color: #10b981; font-weight: 600;">Try it now →</a>`
                                     },
                                     {
                                         question: 'Do I need to create an account?',
-                                        answer: 'No account creation needed. Our invoice generator works instantly without any sign-up process.'
+                                        answer: `No account creation needed. Our invoice generator works instantly without any sign-up process. <a href="${targetLink}" style="color: #10b981; font-weight: 600;">Start creating invoices now →</a>`
                                     },
                                     {
                                         question: 'What information do I need to create an invoice?',
-                                        answer: 'You need your business details, client information, invoice items with descriptions and prices, and any applicable taxes or discounts.'
+                                        answer: `You need your business details, client information, invoice items with descriptions and prices, and any applicable taxes or discounts. <a href="${targetLink}" style="color: #10b981; font-weight: 600;">See sample invoice →</a>`
                                     },
                                     {
                                         question: 'Can I customize the invoice design?',
-                                        answer: 'Yes! You can add your logo, change colors, modify layouts, and include custom payment terms to match your brand.'
+                                        answer: `Yes! You can add your logo, change colors, modify layouts, and include custom payment terms to match your brand. <a href="${targetLink}" style="color: #10b981; font-weight: 600;">Customize your invoice →</a>`
                                     }
                                 ].map((faq, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].faqItem,
@@ -2022,7 +2210,9 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: faq.answer
+                                                dangerouslySetInnerHTML: {
+                                                    __html: faq.answer
+                                                }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/index.js",
                                                 lineNumber: 579,
@@ -2042,7 +2232,181 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 554,
+                        lineNumber: 551,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resources,
+                        role: "region",
+                        "aria-labelledby": "resources-heading",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionHeader,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionTitle,
+                                        id: "resources-heading",
+                                        children: "🔧 More Free Business Tools"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 588,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].sectionSubtitle,
+                                        children: "Explore our complete suite of free business tools"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 589,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/pages/index.js",
+                                lineNumber: 587,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resourceGrid,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: targetLink,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resourceCard,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resourceIcon,
+                                                children: "🧾"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 595,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                children: "Receipt Maker"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 596,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                children: "Create professional receipts instantly"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 597,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 594,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: targetLink,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resourceCard,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resourceIcon,
+                                                children: "📊"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 600,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                children: "Estimate Generator"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 601,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                children: "Generate accurate project estimates"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 602,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 599,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: targetLink,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resourceCard,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resourceIcon,
+                                                children: "📑"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 605,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                children: "Invoice Templates"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 606,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                children: "50+ free customizable templates"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 607,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 604,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: targetLink,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resourceCard,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].resourceIcon,
+                                                children: "🧮"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 610,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                children: "Business Calculators"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 611,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                children: "Financial calculators for businesses"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/pages/index.js",
+                                                lineNumber: 612,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/pages/index.js",
+                                        lineNumber: 609,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/pages/index.js",
+                                lineNumber: 593,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/pages/index.js",
+                        lineNumber: 586,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2058,7 +2422,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                     children: "🚀 Ready to Create Professional Invoices?"
                                 }, void 0, false, {
                                     fileName: "[project]/src/pages/index.js",
-                                    lineNumber: 588,
+                                    lineNumber: 620,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2069,7 +2433,7 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                             children: "50,000+ businesses and freelancers"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 590,
+                                            lineNumber: 622,
                                             columnNumber: 20
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         " who trust our free invoice generator. No credit card required. ",
@@ -2077,13 +2441,13 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                             children: "Start now and get paid faster."
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 591,
+                                            lineNumber: 623,
                                             columnNumber: 40
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/index.js",
-                                    lineNumber: 589,
+                                    lineNumber: 621,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2092,29 +2456,29 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                     "aria-label": "Final Call to Action",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/free-invoice-generator",
+                                            href: targetLink,
                                             className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btn} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btnPrimary} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btnLarge}`,
                                             "aria-label": "Generate your first free invoice now - No signup needed",
                                             children: "⚡ Generate Your First Invoice - FREE"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 594,
+                                            lineNumber: 626,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "#features",
+                                            href: targetLink,
                                             className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btn} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btnSecondary} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].btnLarge}`,
                                             "aria-label": "Explore all features of our invoice generator",
-                                            children: "📊 View All Features"
+                                            children: "📊 Explore All Features"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.js",
-                                            lineNumber: 601,
+                                            lineNumber: 633,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/index.js",
-                                    lineNumber: 593,
+                                    lineNumber: 625,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2123,138 +2487,29 @@ const InvoiceLP = ({ currentDate, lastModifiedDate })=>{
                                         children: "✅ No credit card required • ✅ No registration needed • ✅ 100% Free Forever"
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 610,
+                                        lineNumber: 642,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/pages/index.js",
-                                    lineNumber: 609,
+                                    lineNumber: 641,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/pages/index.js",
-                            lineNumber: 587,
+                            lineNumber: 619,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.js",
-                        lineNumber: 586,
-                        columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$InvoiceLP$2e$module$2e$css__$5b$client$5d$__$28$css__module$29$__["default"].seoContent,
-                        "aria-hidden": "true",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                children: "Free Invoice Generator Features"
-                            }, void 0, false, {
-                                fileName: "[project]/src/pages/index.js",
-                                lineNumber: 617,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "Our free online invoice generator helps freelancers, contractors, and small businesses create professional invoices instantly. Key features include instant PDF generation, tax calculations, discount support, multi-currency options, and custom branding. Perfect for creating invoices for clients, managing billing, and improving cash flow."
-                            }, void 0, false, {
-                                fileName: "[project]/src/pages/index.js",
-                                lineNumber: 618,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                children: "Related Search Terms"
-                            }, void 0, false, {
-                                fileName: "[project]/src/pages/index.js",
-                                lineNumber: 622,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "free invoice maker online"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 624,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "create invoice pdf free"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 625,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "professional invoice template free"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 626,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "online billing software free"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 627,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "invoice generator for small business"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 628,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "freelance invoice creator"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 629,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "instant invoice maker"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 630,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "digital invoice generator"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 631,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "free invoice software"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 632,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "quick invoice creator"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/pages/index.js",
-                                        lineNumber: 633,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/pages/index.js",
-                                lineNumber: 623,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0))
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/pages/index.js",
-                        lineNumber: 616,
+                        lineNumber: 618,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/pages/index.js",
-                lineNumber: 346,
+                lineNumber: 306,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]

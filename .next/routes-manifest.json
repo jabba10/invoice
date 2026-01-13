@@ -115,11 +115,11 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/fCCzfeapeErSfqleaUZJl/index\\.json$"
+      "dataRouteRegex": "^/_next/data/Te8PHg2YkjG3R\\-Qy1Nlen/index\\.json$"
     },
     {
       "page": "/aboutus",
-      "dataRouteRegex": "^/_next/data/fCCzfeapeErSfqleaUZJl/aboutus\\.json$"
+      "dataRouteRegex": "^/_next/data/Te8PHg2YkjG3R\\-Qy1Nlen/aboutus\\.json$"
     }
   ],
   "rsc": {

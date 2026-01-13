@@ -6,8 +6,8 @@
   "rootMainFiles": [],
   "pages": {
     "/free-invoice-generator": [
-      "static/chunks/node_modules_ee3110e2._.js",
-      "static/chunks/[root-of-the-server]__134b1cdc._.js",
+      "static/chunks/node_modules_143b04a1._.js",
+      "static/chunks/[root-of-the-server]__656e7e56._.js",
       "static/chunks/node_modules_next_dist_compiled_8ca6b690._.js",
       "static/chunks/node_modules_next_dist_shared_lib_8bac8163._.js",
       "static/chunks/node_modules_next_dist_client_5a8a528e._.js",
@@ -18,7 +18,7 @@
       "static/chunks/node_modules_53420d03._.js",
       "static/chunks/src_pages_Invoice_module_73ecdea2.css",
       "static/chunks/src_pages_free-invoice-generator_2da965e7._.js",
-      "static/chunks/turbopack-src_pages_free-invoice-generator_065d0485._.js"
+      "static/chunks/turbopack-src_pages_free-invoice-generator_c53c72fb._.js"
     ]
   },
   "ampFirstPages": []

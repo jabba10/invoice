@@ -14,9 +14,6 @@ self.__BUILD_MANIFEST = {
   "/free-invoice-generator": [
     "static/chunks/pages/free-invoice-generator.js"
   ],
-  "/privacy-policy": [
-    "static/chunks/pages/privacy-policy.js"
-  ],
   "__rewrites": {
     "afterFiles": [],
     "beforeFiles": [],
@@ -31,7 +28,6 @@ self.__BUILD_MANIFEST = {
     "/contact-us",
     "/free-invoice-generator",
     "/free-invoice-generator-certificate",
-    "/not-found-page",
     "/privacy-policy",
     "/testimonials"
   ]

@@ -5,7 +5,7 @@
       "initialRevalidateSeconds": 86400,
       "initialExpireSeconds": 31536000,
       "srcRoute": null,
-      "dataRoute": "/_next/data/fCCzfeapeErSfqleaUZJl/aboutus.json",
+      "dataRoute": "/_next/data/Te8PHg2YkjG3R-Qy1Nlen/aboutus.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -19,7 +19,7 @@
       "initialRevalidateSeconds": 86400,
       "initialExpireSeconds": 31536000,
       "srcRoute": null,
-      "dataRoute": "/_next/data/fCCzfeapeErSfqleaUZJl/index.json",
+      "dataRoute": "/_next/data/Te8PHg2YkjG3R-Qy1Nlen/index.json",
       "allowHeader": [
         "host",
         "x-matched-path",
